@@ -12,24 +12,24 @@ const myDivider = {
 }
 
 export default () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 1900) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `)
+  const data = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1900) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
   useEffect(() => window.scrollTo(0, 800), [])
 
   return (
     <div>
       <Layout>
-        {/* <Img fluid={data.image.childImageSharp.fluid} /> */}
+        <Img fluid={data.image.childImageSharp.fluid} />
 
         <div className='container'>
           <div className='lo-studio'>

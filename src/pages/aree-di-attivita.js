@@ -12,21 +12,21 @@ const myDivider = {
 }
 
 export default () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       image: file(relativePath: { eq: "aree-di-attivita.jpg" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 1900) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `)
+  const data = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "aree-di-attivita.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1900) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div>
       <Layout>
-        {/* <Img fluid={data.image.childImageSharp.fluid} /> */}
+        <Img fluid={data.image.childImageSharp.fluid} />
         <div className='container'>
           <div className='lo-studio'>
             <h2>Aree Di Attività</h2>
