@@ -8,7 +8,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-// import Footer from './footer'
+import Footer from './footer'
 
 import CookieConsent from 'react-cookie-consent'
 
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <div>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
       <CookieConsent
         location='bottom'
         buttonText='Ok!'
