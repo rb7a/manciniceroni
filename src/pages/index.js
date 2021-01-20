@@ -28,13 +28,21 @@ const IndexPage = () => (
           <img src={icon1} style={{ display: 'block', margin: '0 auto' }} />
           <p><strong>GESTIONE E RECUPERO CREDITI BANCARI</strong></p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit tur adipisicing elit icing elit tur adipi.</p>
-          <p><Link to='/aree-di-attivita/#crediti-bancari'>> Scopri di più</Link></p>
+          <p style={{
+            marginTop: '40px'
+          }}
+          ><Link to='/aree-di-attivita/#crediti-bancari'>> Scopri di più</Link>
+          </p>
         </div>
         <div className='single-service'>
           <img src={icon2} style={{ display: 'block', margin: '0 auto' }} />
           <p><strong>GESTIONE E RECUPERO CREDITI COMMERCIALI</strong></p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit tur adipisicing elit icing elit tur adipi.</p>
-          <p><Link to='/aree-di-attivita/#crediti-commerciali'>> Scopri di più</Link></p>
+          <p style={{
+            marginTop: '40px'
+          }}
+          ><Link to='/aree-di-attivita/#crediti-commerciali'>> Scopri di più</Link>
+          </p>
         </div>
       </div>
     </div>
@@ -58,6 +66,7 @@ const IndexPage = () => (
           box-shadow: var(--shadow);
           padding: 20px 20px 40px;
           margin-bottom: 20px;
+          border-radius: 35px
         
         }
         .single-service a {
@@ -82,7 +91,7 @@ const IndexPage = () => (
         }
         .single-service{
           margin: 10px 40px;
-          padding: 20px 40px 60px
+          padding: 30px 40px 50px
         }
       }
    

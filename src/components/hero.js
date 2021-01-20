@@ -32,7 +32,7 @@ const Hero = () => (
           padding: 0;
           margin: 0;
           font-size: 46px;
-          color: #222;
+          color: --var(--dark)
         }
         .hero span {
           color: var(--grey);

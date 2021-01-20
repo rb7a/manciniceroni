@@ -7,7 +7,7 @@ const Button = (props) => (
     <style jsx='true'>{`
         .button {
           text-decoration: none;
-          padding: 8px 15px;
+          padding: 8px 18px;
           border: 2px solid var(--main-color);
           color: #fff;
           background-color: var(--main-color);
@@ -15,8 +15,9 @@ const Button = (props) => (
           margin-top: 10px;
           display: inline-block;
           font-size: 14px;
-          border-radius: 4px;
+          border-radius: 35px;
           transition: all 0.2s ease-in-out;
+          letter-spacing: 0.4px;
           min-width: 100px
         }
         .button:hover{

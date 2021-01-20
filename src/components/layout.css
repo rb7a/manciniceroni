@@ -1,8 +1,10 @@
 
 :root {
-  --grey: #5e5e5e;
+  --grey: #525252;
   --main-color: #052B60 ;
-  --shadow: 0px 4px 10px 0 rgba(0,0,0,0.3)
+  --shadow: 0px 2px 20px 3px rgba(184,184,184,.5);
+  --dark: #302a25
+  /* --shadow: 0px 4px 10px 0 rgba(0,0,0,0.3) */
 }
 
 html, body{
@@ -26,16 +28,18 @@ a:hover{
 } */
 
 h1{
-  color: #333;
+  color: var(--dark);
   font-weight: bold;
 }
 h2{
   font-size: 38px;
   font-weight: 700 ;
-  color: #333
+  color: var(--dark);
+
 }
 h3 {
-  color: #333
+  color: var(--dark);
+
 }
 strong {
   font-weight: 500;

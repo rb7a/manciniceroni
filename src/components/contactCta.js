@@ -21,7 +21,7 @@ const contactCta = () => (
         top:60px
       }
       .contact-cta h2 {
-          color: #fff !important
+          color: #fff
       }
       .contact-cta p {
         color: #fff;
@@ -30,9 +30,11 @@ const contactCta = () => (
       .btn-cta{
           border: 1px solid #fff;
           color: #fff !important;
-          font-weight: 600;
+          font-weight: 400;
           padding: 10px 30px;
-          border-radius: 4px;
+          border-radius: 35px;
+          letter-spacing: 0.4px;
+
         }
         .btn-cta:hover{
           border: 1px solid #fff;

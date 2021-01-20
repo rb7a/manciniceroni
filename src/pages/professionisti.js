@@ -12,30 +12,30 @@ const myDivider = {
 }
 
 export default () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 1900) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `)
+  const data = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1900) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
   useEffect(() => window.scrollTo(0, 800), [])
 
   return (
     <div>
       <Layout>
-        {/* <Img fluid={data.image.childImageSharp.fluid} /> */}
 
         <div className='container'>
           <div className='lo-studio'>
-            <h2>Lo Studio</h2>
+            <h2>Professionisti</h2>
             <div style={myDivider} />
-            <span><strong>Professionisti del recupero crediti, con l’obiettivo del rapido raggiungimento del risultato. Spirito di ascolto e comprensione, competenza e perseveranza.</strong>
+            <span><strong>A supporto del Cliente con entusiasmo e dedizione.
+            </strong>
             </span>
             <p style={{
               marginTop: '40px'

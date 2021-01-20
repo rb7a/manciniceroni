@@ -10,23 +10,22 @@ const myDivider = {
 }
 
 export default () => {
-  const data = useStaticQuery(graphql`
-  query {
-    image: file(relativePath: { eq: "mancini-ceroni-studio-legale.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`)
+//   const data = useStaticQuery(graphql`
+//   query {
+//     image: file(relativePath: { eq: "mancini-ceroni-studio-legale.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 800) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `)
 
-  console.log(data, 'data')
   return (
     <section id='about-section'>
       <div className='half-section section-left'>
-        <Img fluid={data.image.childImageSharp.fluid} />
+        {/* <Img fluid={data.image.childImageSharp.fluid} /> */}
       </div>
       <div className='half-section section-right'>
         <div id='about-right-container'>
