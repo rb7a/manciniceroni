@@ -142,6 +142,7 @@ class Header extends React.Component {
             .desktop-menu {
               display: flex;
               justify-content: space-around;
+              height: 100px
             }
             .desktop-menu li {
             list-style: none

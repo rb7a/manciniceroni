@@ -26,14 +26,21 @@ a:hover{
 } */
 
 h1{
-  color: #222;
+  color: #333;
   font-weight: bold;
 }
 h2{
   font-size: 38px;
   font-weight: 700 ;
+  color: #333
 }
-
+h3 {
+  color: #333
+}
+strong {
+  font-weight: 500;
+  color: #424242;
+}
 .container{
   width: 95%;
   margin: 0 auto;

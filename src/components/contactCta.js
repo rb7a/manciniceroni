@@ -20,7 +20,9 @@ const contactCta = () => (
         position: relative;
         top:60px
       }
-      
+      .contact-cta h2 {
+          color: #fff !important
+      }
       .contact-cta p {
         color: #fff;
         margin-bottom: 40px

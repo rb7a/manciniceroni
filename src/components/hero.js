@@ -1,5 +1,5 @@
 import React from 'react'
-// import Button from './button'
+import Button from './button'
 import { Link } from 'gatsby'
 
 const Hero = () => (
@@ -12,7 +12,7 @@ const Hero = () => (
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reiciendis.</p>
       <div className='cta'>
-        {/* <Button link='/contatti' linkName='CONTATTI' /> */}
+        <Button link='/contatti' linkName='CONTATTI' />
         <Link to='/professionisti'><p className='cta-text'>> Chi siamo</p></Link>
       </div>
     </div>
