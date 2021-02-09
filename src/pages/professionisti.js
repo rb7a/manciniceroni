@@ -47,7 +47,10 @@ export default () => {
                 marginTop: '40px'
               }}
               >
-                <Img fluid={data.image.childImageSharp.fluid} />
+                <div className='img-container'>
+                  <Img fluid={data.image.childImageSharp.fluid} />
+                </div>
+
                 <h3>Avv. Nicola Mancini</h3>
                 <p><strong>Formazione:</strong></p>
                 <ul>
@@ -79,7 +82,9 @@ export default () => {
                 marginTop: '60px'
               }}
               >
-                <Img fluid={data.image2.childImageSharp.fluid} />
+                <div className='img-container'>
+                  <Img fluid={data.image2.childImageSharp.fluid} />
+                </div>
                 <h3>Avv. Elisabetta Ceroni</h3>
                 <p><strong>Formazione:</strong></p>
                 <ul>
@@ -121,6 +126,10 @@ export default () => {
           .lo-studio p, 
           .lo-studio li {
               color: var(--grey)
+          }
+          .img-container {
+            box-shadow: var(--shadow);
+           
           }
           @media(min-width:968px){
             .lo-studio{

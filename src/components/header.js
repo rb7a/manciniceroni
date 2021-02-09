@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo from '../images/logo-manciniceroni.png'
+import logoMobile from '../images/logo-manciniceroni-mobile.png'
 
 class Header extends React.Component {
   state = {
@@ -19,7 +20,7 @@ class Header extends React.Component {
         <section className="mobile-nav">
           <Link to="/">
             {" "}
-            <img src={logo} alt="logo-manciniceroni" className="logo-mobile" />
+            <img src={logoMobile} alt="logo-manciniceroni" className="logo-mobile" />
           </Link>
           {this.state.visible ? (
             <div onClick={this.showMobileMenu} className="burger-icon-close">
@@ -111,7 +112,6 @@ class Header extends React.Component {
             font-size: 26px;
             color: #777;
             position: relative;
-            top: 50px;
             right: 20px;
           }
           .burger-icon-open {
@@ -119,12 +119,18 @@ class Header extends React.Component {
             top: 55px;
             right: 10px;
           }
+          .mobile-menu ul {
+            position: relative;
+            bottom: 20px
+          }
 
           .burger-icon-open span {
             width: 30px;
             border: 1px solid #777;
             margin: 5px;
             display: block;
+            position: relative;
+            bottom: 50px
           }
           .mobile-menu li {
             margin: 10px;
@@ -142,7 +148,6 @@ class Header extends React.Component {
             }
             .desktop-menu {
               display: flex;
-              
               justify-content: space-around;
               height: 100px
             }
