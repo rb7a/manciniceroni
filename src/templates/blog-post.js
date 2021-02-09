@@ -5,7 +5,6 @@ import ContactCta from '../components/contactCta'
 
 export default function BlogPost ({ data }) {
   const post = data.allWpPost.nodes[0]
-  console.log(post)
   return (
     <Layout>
       <div className='img-container'>

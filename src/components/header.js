@@ -1,94 +1,108 @@
-import React from "react"
-import { Link } from "gatsby"
-import logo from '../images/logo-manciniceroni.png'
-import logoMobile from '../images/logo-manciniceroni-mobile.png'
+import React, { useState } from 'react'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-class Header extends React.Component {
-  state = {
-    visible: false,
+export default () => {
+  const data = useStaticQuery(graphql`
+  query {
+    logoMobile: file(relativePath: { eq: "logo-manciniceroni-mobile.png" }) {
+      childImageSharp {
+        fixed(width: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "logo-manciniceroni.png" }) {
+      childImageSharp {
+        fixed(width: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
+`)
+  const [visible, setVisible] = useState(false)
 
-  showMobileMenu = () => {
-    this.setState(prevState => {
-      return { visible: !prevState.visible }
-    })
+  const showMobileMenu = (data) => {
+    setVisible(!visible)
   }
-
-  render() {
-    return (
-      <header>
-        <section className="mobile-nav">
-          <Link to="/">
-            {" "}
-            <img src={logoMobile} alt="logo-manciniceroni" className="logo-mobile" />
-          </Link>
-          {this.state.visible ? (
-            <div onClick={this.showMobileMenu} className="burger-icon-close">
-              <span>X</span>
-            </div>
-          ) : (
-            <div onClick={this.showMobileMenu} className="burger-icon-open">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          )}
-        </section>
-
-        {this.state.visible ? (
-          <nav className="mobile-menu">
-            <ul>
-              <li>
-                <Link to="/">HOME</Link>
-              </li>
-              <li>
-                <Link to="/lo-studio">LO STUDIO</Link>
-              </li>
-              <li>
-                <Link to="/professionisti">PROFESSIONISTI</Link>
-              </li>
-              <li>
-                <Link to="/aree-di-attivita">AREE DI ATTIVITÀ</Link>
-              </li>
-              <li>
-                <Link to="/news">NEWS</Link>
-              </li>
-              <li>
-                <Link to="/contatti">CONTATTI</Link>
-              </li>
-            </ul>
-          </nav>
+  console.log(data, 'data')
+  return (
+    <header>
+      <section className='mobile-nav'>
+        <Link to='/'>
+          {' '}
+          <Img fixed={data.logoMobile.childImageSharp.fixed} />
+        </Link>
+        {visible ? (
+          <div onClick={showMobileMenu} className='burger-icon-close'>
+            <span>X</span>
+          </div>
         ) : (
-          <p></p>
+          <div onClick={showMobileMenu} className='burger-icon-open'>
+            <span />
+            <span />
+            <span />
+          </div>
         )}
+      </section>
 
-        <nav className="desktop-menu">
-          <Link to="/">
-          <img src={logo} alt="logo-manciniceroni" className="logo-desktop" />
-          </Link>
+      {visible ? (
+        <nav className='mobile-menu'>
           <ul>
-              <li>
-                <Link to="/">HOME</Link>
-              </li>
-              <li>
-                <Link to="/lo-studio">LO STUDIO</Link>
-              </li>
-              <li>
-                <Link to="/professionisti">PROFESSIONISTI</Link>
-              </li>
-              <li>
-                <Link to="/aree-di-attivita">AREE DI ATTIVITÀ</Link>
-              </li>
-              <li>
-                <Link to="/news">NEWS</Link>
-              </li>
-              <li>
-                <Link to="/contatti">CONTATTI</Link>
-              </li>
-            </ul>
+            <li>
+              <Link to='/'>HOME</Link>
+            </li>
+            <li>
+              <Link to='/lo-studio'>LO STUDIO</Link>
+            </li>
+            <li>
+              <Link to='/professionisti'>PROFESSIONISTI</Link>
+            </li>
+            <li>
+              <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
+            </li>
+            <li>
+              <Link to='/news'>NEWS</Link>
+            </li>
+            <li>
+              <Link to='/contatti'>CONTATTI</Link>
+            </li>
+          </ul>
         </nav>
+      ) : (
+        <p />
+      )}
 
-        <style jsx="true">{`
+      <nav className='desktop-menu'>
+        <div style={{ width: '305px' }}>
+          <Link to='/'>
+            <Img fixed={data.logo.childImageSharp.fixed} />
+          </Link>
+        </div>
+        <ul>
+          <li>
+            <Link to='/'>HOME</Link>
+          </li>
+          <li>
+            <Link to='/lo-studio'>LO STUDIO</Link>
+          </li>
+          <li>
+            <Link to='/professionisti'>PROFESSIONISTI</Link>
+          </li>
+          <li>
+            <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
+          </li>
+          <li>
+            <Link to='/news'>NEWS</Link>
+          </li>
+          <li>
+            <Link to='/contatti'>CONTATTI</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <style jsx='true'>{`
           .mobile-nav {
             display: flex;
             justify-content: space-between;
@@ -173,10 +187,8 @@ class Header extends React.Component {
               top: 5px
             }
           }
-        `}</style>
-      </header>
-    )
-  }
+        `}
+      </style>
+    </header>
+  )
 }
-
-export default Header
