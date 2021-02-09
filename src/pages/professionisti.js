@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+
 import Layout from '../components/layout'
 import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
@@ -14,7 +15,14 @@ const myDivider = {
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
+      image: file(relativePath: { eq: "nicola-mancini.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1900) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image2: file(relativePath: { eq: "elisabetta-ceroni.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 1900) {
             ...GatsbyImageSharpFluid
@@ -29,35 +37,78 @@ export default () => {
   return (
     <div>
       <Layout>
-
         <div className='container'>
           <div className='lo-studio'>
             <h2>Professionisti</h2>
             <div style={myDivider} />
-            <span><strong>A supporto del Cliente con entusiasmo e dedizione.
-            </strong>
-            </span>
-            <p style={{
-              marginTop: '40px'
-            }}
-            >Lo Studio Legale ManciniCeroni si occupa in via esclusiva di recupero crediti e svolge la propria attività in favore di piccole e medie imprese, artigiani, professionisti, banche e Intermediari Finanziari.
-            </p>
-            <p>Lo Studio è specializzato nella gestione e nel recupero di crediti commerciali e bancari e fornisce un servizio di eccellenza, basato sulla qualità, sulla rapidità e sul raggiungimento dei risultati.</p>
-            <p>ManciniCeroni adotta un preciso metodo acquisito attraverso una consolidata esperienza maturata negli anni attraverso la collaborazione con primari Studi legali del settore e Società di recupero crediti.</p>
-            <p>Lo Studio in particolare presta servizi su misura, indentificati come “servizi di artigianato legale innovativo”, che consentono al Cliente di:</p>
-            <ul>
-              <li>Gestire e recuperare i propri crediti rapidamente.
-              </li>
-              <li>Evitare costi e spese in mancanza di un effettivo recupero.
-              </li>
-              <li>Ottenere la tutela e la valorizzazione dei propri crediti.
-              </li>
-            </ul>
-            <p style={{
-              marginBottom: '40px'
-            }}
-            >L’approccio dello Studio si differenzia all’interno dell’attuale panorama legale, per il rapporto di fiducia, trasparenza e collaborazione che viene instaurato con il Cliente, fondato sull’ascolto e sulla comprensione e finalizzato al rapido raggiungimento dei risultati,  attraverso un servizio di qualità che ha come fondamenta i valori della gentilezza, della dignità e dell’umanità, che contraddistinguono la filosofia dello Studio Mancini Ceroni.
-            </p>
+            <span><strong>A supporto del Cliente con entusiasmo e dedizione.</strong></span>
+            <div className='professionisti-container'>
+              <div style={{
+                marginTop: '40px'
+              }}
+              >
+                <Img fluid={data.image.childImageSharp.fluid} />
+                <h3>Avv. Nicola Mancini</h3>
+                <p><strong>Formazione:</strong></p>
+                <ul>
+                  <li>Laurea in Giurisprudenza presso l’Università “Alma Mater Studiorum” di Bologna;
+                  </li>
+                  <li>Master di secondo livello in Diritto Privato Europeo presso l’Università “La Sapienza” di Roma;
+                  </li>
+                  <li>Abilitazione all’esercizio della professione forense ed iscrizione all’Albo degli Avvocati di Ancona;
+                  </li>
+                  <li>Master di specializzazione in contenzioso bancario e finanziario.</li>
+                </ul>
+                <p><strong>Esperienze:</strong>
+                </p>
+                <p>Ha collaborato con primari Studi Legali, banche e Società specializzate in recupero crediti, prestando consulenza per la gestione ed il recupero di crediti di derivazione commerciale e bancaria. </p>
+                <p>Ha fornito consulenza in qualità di gestore/asset manager e legale interno in favore di: </p>
+                <ul>
+                  <li>Juliet S.p.A. (gruppo Cerved S.p.A.); </li>
+                  <li>FBS S.p.A. (gruppo Banca IFIS S.p.A.); </li>
+                  <li>La Scala Società Tra Avvocati Per Azioni; </li>
+                  <li>Studio legale internazionale Bacciardi and Partners. </li>
+                </ul>
+                <p><strong>Contatti</strong></p>
+                <p>Tel: 349 0887444</p>
+                <p>Email: <a href='mailto:nicola@manciniceronistudiolegale.it '>nicola@manciniceronistudiolegale.it </a></p>
+              </div>
+              <div style={{
+                marginTop: '60px'
+              }}
+              >
+                <Img fluid={data.image2.childImageSharp.fluid} />
+                <h3>Avv. Elisabetta Ceroni</h3>
+                <p><strong>Formazione:</strong></p>
+                <ul>
+                  <li>Laurea in Giurisprudenza presso l’Università “Luiss Guido Carli” di Roma;
+                  </li>
+                  <li>Abilitazione all’esercizio della professione forense ed iscrizione all’Albo degli Avvocati di Fermo;
+                  </li>
+                  <li>Scuola di specializzazione in diritto civile presso l’Università di Camerino.
+                  </li>
+                </ul>
+                <p><strong>Esperienze:</strong>
+                </p>
+                <p>Ha collaborato con primari Studi Legali e Società specializzate in recupero crediti, prestando consulenza per la gestione ed il recupero di crediti di derivazione commerciale ed utilities. </p>
+                <p>Ha fornito consulenza in qualità di legale interno in favore di:  </p>
+                <ul>
+                  <li>Euro Service S.p.A.;
+                  </li>
+                  <li>Studio legale Natali Mei; </li>
+                  <li>Studio legale internazionale Bacciardi and Partners;
+                  </li>
+                  <li>Studio legale Emiliani & Associati.
+                  </li>
+                </ul>
+                <p>Professionista Delegata alle vendite nelle procedure esecutive immobiliari presso il Tribunale di Fermo.</p>
+                <p>Docente di Diritto ed Economia presso le Scuole secondarie Superiori.
+                </p>
+                <p><strong>Contatti</strong></p>
+                <p>Tel: 334 6775287</p>
+                <p>Email: <a href='mailto: elisabetta@manciniceronistudiolegale.it   '> elisabetta@manciniceronistudiolegale.it   </a></p>
+              </div>
+            </div>
           </div>
         </div>
         <ContactCta />
@@ -71,9 +122,10 @@ export default () => {
           @media(min-width:968px){
             .lo-studio{
               margin-top: 60px ;
-              width: 80%;
+              width: 60%;
               margin: 0 auto
             }
+
           }
         
           `}

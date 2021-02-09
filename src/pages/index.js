@@ -22,12 +22,12 @@ const IndexPage = () => (
     <div className='services'>
       <h2>Aree Di Attività</h2>
       <Divider />
-      <p className='subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nisi officia odit, dolore architecto rem explicabo molestiae at accusamus dolor repudianda.</p>
+      <p className='subtitle'>Lo studio si occupa del settore del recupero crediti, distinto in due principali aree di attività.</p>
       <div className='single-service-container'>
         <div className='single-service'>
           <img src={icon1} style={{ display: 'block', margin: '0 auto' }} />
           <p><strong>GESTIONE E RECUPERO CREDITI BANCARI</strong></p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit tur adipisicing elit icing elit tur adipi.</p>
+          <p>Lo Studio fornisce assistenza in favore di piccole e medie imprese, artigiani e professionisti, per la gestione ed il recupero di crediti commerciali.</p>
           <p style={{
             marginTop: '40px'
           }}
@@ -37,7 +37,7 @@ const IndexPage = () => (
         <div className='single-service'>
           <img src={icon2} style={{ display: 'block', margin: '0 auto' }} />
           <p><strong>GESTIONE E RECUPERO CREDITI COMMERCIALI</strong></p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit tur adipisicing elit icing elit tur adipi.</p>
+          <p>ManciniCeroni fornisce assistenza in favore di banche ed Intermediari Finanziari per la gestione ed il recupero di crediti bancari deteriorati <em>Non Performing Loans (NPL) ed Unlikely to Pay (UTP)</em>.</p>
           <p style={{
             marginTop: '40px'
           }}
@@ -66,7 +66,9 @@ const IndexPage = () => (
           box-shadow: var(--shadow);
           padding: 20px 20px 40px;
           margin-bottom: 20px;
-          border-radius: 35px
+          border-radius: 35px;
+          max-width: 500px;
+          margin: 20px auto
         
         }
         .single-service a {

@@ -32,7 +32,7 @@ export default () => {
           <h2>Lo Studio</h2>
           <div style={myDivider} />
           <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero accusamus maxime aspernatur perspiciatis facere, totam, in quos corporis, nesciunt harum modi atque amet? Eius animi beatae a distinctio, blanditiis vitae saepe quibusdam dolorum voluptatem mollitia, nobis quaerat magnam labore.
+          Lo Studio ManciniCeroni si occupa in via esclusiva di recupero crediti e adotta un preciso metodo acquisito attraverso una consolidata esperienza maturata negli anni attraverso la collaborazione con primari Studi legali del settore e Società di recupero crediti.
           </p>
           <Link to='/lo-studio' id='about-right-link'>> Scopri di più </Link>
 

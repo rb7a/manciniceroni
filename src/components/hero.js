@@ -10,10 +10,10 @@ const Hero = () => (
         MANCINICERONI
       </h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, reiciendis.</p>
+      <p>Spirito di ascolto comprensione, competenza e perseveranza.</p>
       <div className='cta'>
         <Button link='/contatti' linkName='CONTATTI' />
-        <Link to='/professionisti'><p className='cta-text'>> Chi siamo</p></Link>
+        <Link to='/professionisti'><p className='cta-text'>> Professionisti</p></Link>
       </div>
     </div>
     <style jsx='true'>
@@ -48,6 +48,9 @@ const Hero = () => (
         .cta-text {
             margin-top: 40px;  
           }
+        .cta-text:hover {
+            color: var(--main-color)  
+          }
        
         @media (min-width: 1200px) {
           .hero h1 {
@@ -60,7 +63,7 @@ const Hero = () => (
           .cta {
             display: flex;
             justify-content: space-evenly;
-            width: 50%;
+            width: 60%;
             margin: 0 auto
           }
          

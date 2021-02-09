@@ -35,9 +35,9 @@ const Footer = () => {
       <style jsx='true'>{`
          .footer {
              display:block;
-             margin: 60px 10px 0px;
+             margin: 60px 0px 0px;
              background-color: #fafafa;
-             padding-top: 40px;     
+             padding: 40px 10px 0;     
          }
         .footer-info-main-container {
             margin-top: 60px

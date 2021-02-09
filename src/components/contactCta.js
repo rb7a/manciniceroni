@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 const contactCta = () => (
   <section className='contact-cta'>
     <div>
-      <h2>Lorem ipsum?</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit obcaecati at distinctio.</p>
+      <h2>Sei interessato a saperne di più?</h2>
+      <p>Contattaci per sapere quello che possiamo fare per te.</p>
     </div>
     <div>
       <Link style={{ textAlign: 'center' }} className='btn btn-cta' to='/contatti'>CONTATTI</Link>
