@@ -72,6 +72,8 @@ export default () => {
                 <p><strong>Contatti</strong></p>
                 <p>Tel: 349 0887444</p>
                 <p>Email: <a href='mailto:nicola@manciniceronistudiolegale.it '>nicola@manciniceronistudiolegale.it </a></p>
+                <p>Linkedin: <a href='https://www.linkedin.com/in/avvocatonicolamancini/' target='_blank'>Nicola Mancini</a></p>
+
               </div>
               <div style={{
                 marginTop: '60px'
@@ -107,6 +109,7 @@ export default () => {
                 <p><strong>Contatti</strong></p>
                 <p>Tel: 334 6775287</p>
                 <p>Email: <a href='mailto: elisabetta@manciniceronistudiolegale.it   '> elisabetta@manciniceronistudiolegale.it   </a></p>
+                <p>Linkedin: <a href='https://www.linkedin.com/in/elisabetta-ceroni/' target='_blank'>Elisabetta Mancini</a></p>
               </div>
             </div>
           </div>
