@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       {/* <Helmet>
@@ -49,13 +48,13 @@ export default ({ data }) => {
               font-weight: 500
             }
             .img-blog {
-            border-radius: 35px;
-            box-shadow: var(--shadow)
+              border-radius: 35px;
+              box-shadow: var(--shadow)
           }
             @media(min-width:1200px){
               .blog-section{
                 width: 50%
-            }
+              }
             }
             `}
       </style>

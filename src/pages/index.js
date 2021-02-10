@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 
 import Hero from '../components/hero'
 import AboutHome from '../components/aboutHome'
+import Partners from '../components/partners'
 import ContactCta from '../components/contactCta'
 import Divider from '../components/divider'
 import { Helmet } from 'react-helmet'
@@ -14,7 +15,7 @@ const IndexPage = () => (
   <Layout>
 
     <Helmet>
-      <title>MANCINICERIONI</title>
+      <title>MANCINICERIONI | Gestione E Recupero Crediti</title>
     </Helmet>
     <Hero />
 
@@ -46,7 +47,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-
+    <Partners />
     <ContactCta />
     <style jsx='true'>{`
 
@@ -79,6 +80,7 @@ const IndexPage = () => (
         .single-service-container {
           margin-top: 60px
         }
+        
       @media(min-width: 960px){
         .services {
           margin-top: 140px

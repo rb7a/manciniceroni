@@ -21,7 +21,7 @@ export default () => {
     }
   }
 `)
-  console.log(data, 'data')
+
   return (
     <section id='about-section'>
       <div className='half-section section-left'>
