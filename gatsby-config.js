@@ -5,6 +5,17 @@ module.exports = {
     author: '@gatsbyjs'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Poppins',
+            variants: ['400', '500', '600'`700`, '800']
+          }
+        ]
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',

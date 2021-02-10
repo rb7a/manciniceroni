@@ -23,6 +23,7 @@ const Hero = () => (
           height: 80vh;
           display: flex;
           justify-content: center;
+          margin: 0 20px
         }
         .hero-wrapper{
           margin-top: 80px
@@ -36,8 +37,7 @@ const Hero = () => (
         }
         .hero span {
           color: var(--grey);
-          position: relative;
-          top: 8px
+          
         }
         .hero p {
           position: relative;
@@ -58,7 +58,9 @@ const Hero = () => (
           }
           span {
             font-size: 18px;
-            letter-spacing: 0.5px
+            letter-spacing: 0.5px;
+            position: relative;
+            top: 8px
           }
           .cta {
             display: flex;
