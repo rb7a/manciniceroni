@@ -21,7 +21,7 @@ export default () => {
         <div className='lo-studio'>
           <h2>Contatti</h2>
           <div style={myDivider} />
-          <span><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui natus porro nam saepe quibusdam ipsa nisi odio exercitationem dolore laudantium.</strong>
+          <span><strong>Ne vuoi sapere di più? Mettiti in contatto con noi, saremo felici di fare la tua conoscenza.</strong>
           </span>
           <p style={{
             marginTop: '40px'

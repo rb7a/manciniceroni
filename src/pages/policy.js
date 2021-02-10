@@ -1,61 +1,47 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { graphql } from 'gatsby'
 
-const Policy = () => (
-  <Layout>
-    <section className='container'>
+const policy = ({ pageContext: { locale }, data }) => {
+  return (
+    <Layout path='/' locale={locale} data={data}>
 
-      <p><strong>What Are Cookies</strong></p>
+      <section className='container' style={{ margin: '140px 0', padding: ' 0 4%' }}>
+        <h1>Privacy</h1>
+        <strong>Il titolare del trattamento</strong>
 
-      <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+        <p>La informa che i Suoi dati personali saranno trattati nel rispetto della normativa citata, al fine di garantire i diritti, le libertà fondamentali, nonchè la dignità delle persone fisiche, con particolare riferimento alla riservatezza e all’identità personale.</p>
+        <strong>Comunicazione</strong>
+        <p>I dati potranno essere comunicati a soggetti terzi nominati responsabili del trattamento ai sensi dell’articolo 28 del GDPR e in particolare a istituti bancari, a società attive nel campo assicurativo, a fornitori di servizi strettamente necessari allo svolgimento dell’attività d’impresa, ovvero a consulenti dell’azienda, ove ciò si riveli necessario per ragioni fiscali, amministrative, contrattuali o per esigenze tutelate dalle vigenti normative.
+I Suoi dati personali, ovvero i dati personali di terzi nella sua titolarità, potranno altresì essere comunicati a società esterne, individuate di volta in volta, cui il Titolare affidi l’esecuzione di obblighi derivanti dall’incarico ricevuto alle quali saranno trasmessi i soli dati necessari alle attività loro richieste.
+Tutti i dipendenti, consulenti, e ogni altra “persona fisica” che svolgono la propria attività sulla base delle istruzioni ricevute dal Titolare del Trattamento dei Dati, ai sensi dell’art. 29 del GDPR, sono nominati “Incaricati del trattamento” (nel seguito anche “Incaricati”).
+Agli Incaricati o ai Responsabili, eventualmente designati, il Titolare impartisce adeguate istruzioni operative, con particolare riferimento all’adozione e al rispetto delle misure di sicurezza, al fine di poter garantire la riservatezza e la sicurezza dei dati. In riferimento agli aspetti di protezione dei dati personali l’utente è invitato, ai sensi dell’art. 33 del GDPR a segnalare al Titolare del trattamento eventuali
+circostanze o eventi dai quali possa discendere una potenziale “violazione dei dati personali (data breach)” al fine di consentire una immediata valutazione e l’adozione di eventuali azioni volte a contrastare tale evento mediante ai recapiti sopra indicati.
+Il Titolare è tenuto inoltre a comunicare i dati ad Autorità Pubbliche su loro specifica richiesta.
+        </p>
+        <strong>Tipologie di Dati Raccolti e Finalità</strong>
+        <p>Le tipologie di Dati Personali raccolti da questo sito web, in modo autonomo o tramite terze parti sono: Riferimenti Anagrafici, Cookie e Dati di Statistici di Utilizzo.
+Altri Dati Personali raccolti potrebbero essere indicati in altre sezioni di questa privacy policy o mediante testi informativi visualizzati contestualmente alla raccolta dei Dati stessi.
+        </p>
+        <strong>Form di Contatto</strong>
+        <p>I Dati Personali possono essere inseriti volontariamente dall’Utente mediante apposito form di contatto, hanno lo scopo puramente identificativo, per la gestione anagrafica e comunicazioni espressamente richieste dall’Utente.</p>
+        <strong>Cookies</strong>
+        <p>All’interno dei cookie creati dal sito e dai servizi di cui si avvale non vengono memorizzati tuoi dati personali che consentano di risalire e/o conoscere in modo diretto la tua identità e non rappresentano un rischio per la tua privacy o per l’integrità dei sistemi informatici che utilizzi per accedere alla rete di comunicazione Internet ovvero al Sito.
+L’eventuale utilizzo di Cookies, o mediante altri strumenti di tracciamento, da parte di questo sito o dei titolari dei servizi terzi utilizzati da questo sito, ove non diversamente precisato, ha la finalità di identificare l’Utente e registrare le relative preferenze per finalità strettamente legate all’erogazione del servizio richiesto dall’Utente.
+Il mancato conferimento da parte dell’Utente di alcuni Dati Personali potrebbe impedire il corretto funzionamento del sito e l’impossibilità di erogare i propri servizi.
+L’Utente si assume la responsabilità dei Dati Personali pubblicati o condivisi mediante questo sito e ne garantisce il diritto di comunicarli o diffonderli, liberando il Titolare da qualsiasi responsabilità verso terzi.
+Per visionare maggiori informazioni sui cookie presenti nel sito e le relative finalità visita questo indirizzo:<span> <a href='https://www.techniplate.it/privacy-policy/cookie-policy/'>Cookie policy</a></span>
+        </p>
+        <strong>Google Analytics</strong>
+        <p>In relazione a specifici servizi offerti da Google Inc. è stato predisposta una specifica integrazione alla presente visionabile a questo indirizzo: <span><a href='https://www.techniplate.it/privacy-policy/privacy-policy-google-analytics/'>Privacy Policy Google Analytics</a></span></p>
+        <strong>Titolare del Trattamento dei Dati</strong>
+        <p>Telefono di riferimento: +39 349 0887444 - 334 6775287<br />
 
-      <p>For more general information on cookies see the Wikipedia article on HTTP Cookies.</p>
+Indirizzo email di riferimento: info@manciniceronistudiolegale.it
+        </p>
+      </section>
+    </Layout>
+  )
+}
 
-      <p><strong>How We Use Cookies</strong></p>
-
-      <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
-
-      <p><strong>Disabling Cookies</strong></p>
-
-      <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies.</p>
-
-      <p><strong>The Cookies We Set</strong></p>
-
-      <ul>
-
-        <li>
-            <p>Email newsletters related cookies</p>
-            <p>This site offers newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users.</p>
-          </li>
-
-                </ul>
-
-      <p><strong>Third Party Cookies</strong></p>
-
-      <p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
-
-      <ul>
-
-        <li>
-            <p>This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
-            <p>For more information on Google Analytics cookies, see the official Google Analytics page.</p>
-          </li>
-
-                </ul>
-
-      <p><strong>More Information</strong></p>
-
-      <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site. This Cookies Policy was created with the help of the <a href='https://www.cookiepolicygenerator.com'>Cookies Policy Template Generator</a> and the <a href='https://www.termsandcondiitionssample.com'>Terms and Conditions Template</a>.</p>
-
-      <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
-
-      <ul>
-        <li>Email: info@manciniceronistudiolegale.it</li>
-
-                </ul>
-
-    </section>
-  </Layout>
-)
-
-export default Policy
+export default policy

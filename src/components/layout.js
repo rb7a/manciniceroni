@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import 'poppins-sans-serif'
 import Footer from './footer'
 
 import CookieConsent from 'react-cookie-consent'
@@ -32,12 +31,12 @@ const Layout = ({ children }) => {
         location='bottom'
         buttonText='Ok!'
         cookieName='myAwesomeCookieName2'
-        style={{ background: '#2B373B' }}
+        style={{ background: '#f7f7f7', color: '#222' }}
         buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
         expires={150}
       >
-    This website uses cookies to enhance the user experience.  {' '}
-        <Link className='policy-link' to='/policy'>Learn more</Link>
+      Questo sito utilizza i cookie per migliorare l'esperienza dell'utente.  {' '}
+        <Link className='policy-link' to='/policy'><span style={{ color: '#222', fontSize: '15px' }}>Policy</span>Policy</Link>
       </CookieConsent>
       <style jsx='true'>{`
   .policy-link{
