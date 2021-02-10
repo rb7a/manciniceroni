@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className='contact'>
         <p><strong>Contatti</strong></p>
-        <p className='footer-info'><a href='+39  349 0887444'>+39  349 0887444</a></p>
+        <p className='footer-info'><a href='tel:+39  349 0887444'>+39  349 0887444</a></p>
         <p className='footer-info'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></p>
       </div>
 
