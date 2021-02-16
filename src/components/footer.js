@@ -6,19 +6,19 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-info-main-container'>
         <div className='footer-info-container'>
+          <h4>Ancona</h4>
+          <p className='footer-info'>Via Alcide De Gasperi, 82, 60125 Ancona (AN)
+          </p>
+          {/* <p className='footer-info'>+39  349 0887444	</p>
+          <p className='footer-info'>info@manciniceronistudiolegale.it</p> */}
+
+        </div>
+        <div className='footer-info-container'>
           <h4>Forlì-Cesena</h4>
           <p className='footer-info'>Via Don Ercole Fiori, 9,
 47042 Cesenatico (FC)
           </p>
           {/* <p className='footer-info'>+39  349 0887444</p>
-          <p className='footer-info'>info@manciniceronistudiolegale.it</p> */}
-
-        </div>
-        <div className='footer-info-container'>
-          <h4>Ancona</h4>
-          <p className='footer-info'>Via Alcide De Gasperi, 82, 60125 Ancona (AN)
-          </p>
-          {/* <p className='footer-info'>+39  349 0887444	</p>
           <p className='footer-info'>info@manciniceronistudiolegale.it</p> */}
 
         </div>
@@ -71,8 +71,6 @@ const Footer = () => {
         }
     
     @media(min-width: 968px){
-
-     
         .footer-info-main-container {
              display: flex;
              justify-content: space-evenly;

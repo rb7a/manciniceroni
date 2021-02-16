@@ -3,6 +3,8 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
+import icon1 from '../images/crediti-bancari-icon.png'
+import icon2 from '../images/crediti-commerciali-icon .png'
 
 const myDivider = {
   width: '80px',
@@ -39,10 +41,15 @@ export default () => {
                 <li>Gestione e recupero crediti bancari NPL - UTP.</li>
               </ul>
             </span>
-            <h3
+            <img
               style={{
-                marginTop: '40px'
-              }}
+                display: 'block',
+                marginTop: '60px',
+                width: '64px'
+              }} src={icon1}
+            />
+            <h3
+
               id='crediti-commerciali'
             >GESTIONE E RECUPERO CREDITI COMMERCIALI
 
@@ -53,12 +60,14 @@ export default () => {
             <p>Lo Studio è quindi in grado di fornire autonoma assistenza nella gestione e nel recupero dei crediti commerciali, in fase stragiudiziale, giudiziale ed esecutiva, nonché nelle procedure concorsuali (fallimenti; concordati).</p>
             <p>Lo Studio esegue l’attività necessaria e preventivamente concordata con il Cliente, per il rapido recupero del credito, maturando esclusivamente un compenso a risultato parametrato sull’effettivo credito recuperato. </p>
             <p>Lo Studio persegue altresì la valorizzazione dei crediti affidati, attuando una precisa strategia che mira a trasformare il singolo credito di difficile recuperabilità in un credito garantito da pegno e/o ipoteca, aumentando concretamente le prospettive di recupero.</p>
-            <h3
+            <img
               style={{
-                marginTop: '40px'
-              }}
-              id='crediti-bancari'
-            >GESTIONE E RECUPERO CREDITI BANCARI NPL - UTP
+                display: 'block',
+                marginTop: '60px',
+                width: '64px'
+              }} src={icon2}
+            />
+            <h3 id='crediti-bancari'>GESTIONE E RECUPERO CREDITI BANCARI NPL - UTP
             </h3>
             <p>ManciniCeroni fornisce assistenza in favore di banche ed Intermediari Finanziari per la gestione ed il recupero di crediti bancari deteriorati <em>Non Performing Loans (NPL) ed Unlikely to Pay (UTP).</em></p>
             <p>I Professionisti dello Studio hanno acquisito nel corso degli anni un elevato grado di competenza e specializzazione collaborando con primari Studi legali e Società di recupero crediti, in qualità di gestori/asset manager nonché di legali interni. </p>

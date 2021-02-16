@@ -33,17 +33,11 @@ export default () => {
 
         </div>
         <div>
-          <div style={{
-            marginTop: '80px'
-          }}
+          <div
+            style={{
+              marginTop: '80px'
+            }} className='container-office'
           >
-            <h3>Forlì-Cesena</h3>
-            <p className='contact-address'>Via Don Ercole Fiori 9, 47042</p>
-            <p className='contact-address'>+39 349 0887444</p>
-            <p className='contact-address'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></p>
-            <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.183563001052!2d12.341015015321862!3d44.162075979107115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cba1f7f0402c5%3A0x52b49d9450b1d856!2sVia%20Don%20Fiori%2C%209%2C%2047042%20Bagnarola%20FC%2C%20Italy!5e0!3m2!1sen!2ses!4v1611139833370!5m2!1sen!2ses' width='100%' height='400px' frameborder='0' allowfullscreen='' aria-hidden='false' tabindex='0' />
-          </div>
-          <div>
             <h3 className='address'>Ancona</h3>
             <p className='contact-address'>Via Alcide De Gasperi 82, 60125</p>
             <p className='contact-address'>+39 349 0887444</p>
@@ -52,7 +46,18 @@ export default () => {
 
             <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.9697678037182!2d13.507470515302106!3d43.60717107912294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132d7f907aa79ad3%3A0x30dcbba1e2cb19cb!2sVia%20Alcide%20de%20Gasperi%2C%2082%2C%2060125%20Ancona%20AN%2C%20Italy!5e0!3m2!1sen!2ses!4v1611057132380!5m2!1sen!2ses' width='100%' height='400px' frameborder='0' allowfullscreen='' aria-hidden='false' tabindex='0' />
           </div>
-          <div>
+          <div
+            className='container-office' style={{
+              marginTop: '40px'
+            }}
+          >
+            <h3>Forlì-Cesena</h3>
+            <p className='contact-address'>Via Don Ercole Fiori 9, 47042</p>
+            <p className='contact-address'>+39 349 0887444</p>
+            <p className='contact-address'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></p>
+            <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.183563001052!2d12.341015015321862!3d44.162075979107115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cba1f7f0402c5%3A0x52b49d9450b1d856!2sVia%20Don%20Fiori%2C%209%2C%2047042%20Bagnarola%20FC%2C%20Italy!5e0!3m2!1sen!2ses!4v1611139833370!5m2!1sen!2ses' width='100%' height='400px' frameborder='0' allowfullscreen='' aria-hidden='false' tabindex='0' />
+          </div>
+          <div className='container-office'>
             <h3 className='address'>Fermo</h3>
             <p className='contact-address'>Via Campogrande, 21
 , 63831
@@ -82,6 +87,9 @@ export default () => {
               margin-top: 60px ;
               width: 80%;
               margin: 0 auto
+            }
+            .container-office {
+              width: 70%
             }
           }
           

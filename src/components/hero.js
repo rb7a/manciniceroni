@@ -32,7 +32,7 @@ const Hero = () => (
           text-transform: uppercase;
           padding: 0;
           margin: 0;
-          font-size: 46px;
+          font-size: 34px;
           color: --var(--dark)
         }
         .hero span {
