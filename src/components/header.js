@@ -14,7 +14,7 @@ export default () => {
     }
     logo: file(relativePath: { eq: "logo-manciniceroni.png" }) {
       childImageSharp {
-        fixed(width: 300) {
+        fixed(width: 400) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -22,13 +22,20 @@ export default () => {
   }
 `)
   const [visible, setVisible] = useState(false)
+  const [subMenu, setSubMenu] = useState(false)
+  const [subMenuDesktop, setSubMenuDesktop] = useState(false)
+
+  const activeStyles = {
+    color: '#052B60',
+    borderBottom: '2px solid #052B60'
+  }
 
   const showMobileMenu = (data) => {
     setVisible(!visible)
   }
-  console.log(data, 'data')
+
   return (
-    <header>
+    <header onMouseLeave={() => setSubMenuDesktop(false)}>
       <section className='mobile-nav'>
         <Link to='/'>
           {' '}
@@ -51,7 +58,11 @@ export default () => {
         <nav className='mobile-menu'>
           <ul>
             <li>
-              <Link to='/'>HOME</Link>
+              <Link
+                to='/'
+                activeClassName='active'
+              >HOME
+              </Link>
             </li>
             <li>
               <Link to='/lo-studio'>LO STUDIO</Link>
@@ -59,9 +70,18 @@ export default () => {
             <li>
               <Link to='/professionisti'>PROFESSIONISTI</Link>
             </li>
-            <li>
-              <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
+            <li onClick={() => setSubMenu(!subMenu)}>
+              <Link to='#'>AREE DI ATTIVITÀ</Link>
             </li>
+            {subMenu && (
+              <div className='submenu'>
+                <li>
+                  <Link to='/crediti-commerciali'>CREDITI COMMERCIALI</Link>
+                </li>
+                <li>
+                  <Link to='/crediti-bancari'>CREDITI BANCARI</Link>
+                </li>
+              </div>)}
             <li>
               <Link to='/news'>NEWS</Link>
             </li>
@@ -75,32 +95,44 @@ export default () => {
       )}
 
       <nav className='desktop-menu'>
-        <div style={{ width: '305px' }}>
+        <div style={{ width: '400px' }}>
           <Link to='/'>
             <Img fixed={data.logo.childImageSharp.fixed} />
           </Link>
         </div>
         <ul>
           <li>
-            <Link to='/'>HOME</Link>
+            <Link to='/' activeStyle={activeStyles}>HOME</Link>
           </li>
           <li>
-            <Link to='/lo-studio'>LO STUDIO</Link>
+            <Link to='/lo-studio' activeStyle={activeStyles}>LO STUDIO</Link>
           </li>
           <li>
-            <Link to='/professionisti'>PROFESSIONISTI</Link>
+            <Link to='/professionisti' activeStyle={activeStyles}>PROFESSIONISTI</Link>
+          </li>
+          <li
+            onMouseEnter={() => setSubMenuDesktop(true)}
+
+          >
+            <Link to='#' activeStyle={activeStyles}>AREE DI ATTIVITÀ</Link>
           </li>
           <li>
-            <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
+            <Link to='/news' activeStyle={activeStyles}>NEWS</Link>
           </li>
           <li>
-            <Link to='/news'>NEWS</Link>
-          </li>
-          <li>
-            <Link to='/contatti'>CONTATTI</Link>
+            <Link to='/contatti' activeStyle={activeStyles}>CONTATTI</Link>
           </li>
         </ul>
       </nav>
+      {subMenuDesktop && (
+        <div className='submenu-desktop'>
+          <li>
+            <Link to='/crediti-commerciali'>CREDITI COMMERCIALI</Link>
+          </li>
+          <li>
+            <Link to='/crediti-bancari'>CREDITI BANCARI</Link>
+          </li>
+        </div>)}
 
       <style jsx='true'>{`
           .mobile-nav {
@@ -149,7 +181,12 @@ export default () => {
           .mobile-menu li {
             margin: 10px;
           }
+          .submenu li {
+            font-size: 14px;
+            margin-left: 20px
+          }
           @media (min-width: 1200px) {
+           
             .mobile-nav {
               display: none;
             }
@@ -158,12 +195,21 @@ export default () => {
             }
             .logo{
               position: relative;
-              bottom: 10px
+              bottom: 10px;
             }
             .desktop-menu {
               display: flex;
               justify-content: space-around;
-              height: 100px
+              height: 70px;
+              position: fixed;
+              background-color: #fff;
+              top: 0px;
+              right: 0px;
+              left: 0;
+              padding: 20px 40px 0;
+              z-index: 99;
+              border-bottom: 2px solid #f7f7f7
+         
             }
             .desktop-menu li {
             list-style: none;
@@ -179,12 +225,28 @@ export default () => {
               margin: 20px;
             }
             .desktop-menu ul li:hover {
-              border-bottom: 2px solid #052B60;
-    
+              color: #052B60
             }
             .logo-desktop {
               position: relative;
               top: 5px
+            }
+            .submenu-desktop {
+              z-index: 99;
+              position: relative;
+              top: 70px;
+              background-color: #fff;
+              width: 250px;
+              padding: 10px 20px;
+              position: fixed;
+              top: 80px;
+              right: 100px;
+              border: 2px solid #fafafa
+            }
+            .submenu-desktop li {
+              font-size: 15px;
+              list-style: none;
+              margin-bottom: 5px
             }
           }
         `}

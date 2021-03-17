@@ -124,6 +124,12 @@ export default () => {
          .collaborazioni {
              text-align: center;
          }
+         .collaborazioni h2 {
+          color: var(--main-color)
+         }
+         .collaborazioni {
+             text-align: center;
+         }
          .collaborazioni p {
              color: var(--grey);
          }

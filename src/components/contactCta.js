@@ -13,7 +13,7 @@ const contactCta = () => (
     <style jsx='true'>
       {`
       .contact-cta{
-        background-color: var(--main-color);
+        background-color: #fafafa;
         color: #fff;
         text-align: center;
         padding: 60px 4% 120px;

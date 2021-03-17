@@ -17,8 +17,9 @@ const IndexPage = () => (
     <Helmet>
       <title>MANCINICERIONI | Gestione E Recupero Crediti</title>
     </Helmet>
-    <Hero />
-
+    <div id='hero'>
+      <Hero />
+    </div>
     <AboutHome />
     <div className='services'>
       <h2>Aree Di Attività</h2>
@@ -56,6 +57,9 @@ const IndexPage = () => (
       bottom: 60px;
       margin: 0 10px
     }
+    .services h2 {
+      color: var(--main-color)
+    }
       .services h2, .services p {
         text-align: center
       }
@@ -82,6 +86,11 @@ const IndexPage = () => (
         }
         
       @media(min-width: 960px){
+
+        #hero {
+          position: relative;
+          top: 40px
+        }
         .services {
           margin-top: 140px
         }

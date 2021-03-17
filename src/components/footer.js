@@ -1,5 +1,7 @@
 import React from 'react'
 import Subfooter from '../components/subfooter'
+import phone from '../images/phone.png'
+import mail from '../images/mail.png'
 
 const Footer = () => {
   return (
@@ -33,16 +35,20 @@ const Footer = () => {
       </div>
       <div className='contact'>
         <p><strong>Contatti</strong></p>
-        <p className='footer-info'><a href='tel:+39  349 0887444'>+39  349 0887444</a></p>
-        <p className='footer-info'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></p>
+        <img id='icon' src={phone} />
+        <span className='footer-info'><a href='tel:+39  349 0887444'>+39  349 0887444</a></span>
+        <div>
+          <img id='icon' src={mail} />
+          <span className='footer-info'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></span>
+        </div>
       </div>
-
       <style jsx='true'>{`
          .footer {
              display:block;
              margin: 60px 0px 0px;
-             background-color: #fafafa;
-             padding: 40px 10px 0;     
+             background-color: var(--main-color);
+             padding: 40px 10px 0;  
+             color: #fff  
          }
         .footer-info-main-container {
             margin-top: 60px
@@ -51,10 +57,13 @@ const Footer = () => {
             margin-top: 40px
         }
         .footer-info {
-            color: var(--grey);
+            color: #fff;
             max-width: 70%;
             margin: 0 auto
             
+        }
+        .contact strong, .contact a {
+          color: #fff !important
         }
       
         .footer-info a:hover {
@@ -68,6 +77,12 @@ const Footer = () => {
           position: relative;
           left: 50px;
           top: 10px
+        }
+        #icon {
+          display: inline-block;
+          margin-right: 10px;
+          position: relative;
+          top: 5px
         }
     
     @media(min-width: 968px){
@@ -88,6 +103,7 @@ const Footer = () => {
           position: relative;
           bottom: 10px
         }
+       
         .contact strong {
           left: 0
         }

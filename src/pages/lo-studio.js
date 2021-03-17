@@ -29,7 +29,13 @@ export default () => {
   return (
     <div>
       <Layout>
-        <Img fluid={data.image.childImageSharp.fluid} />
+        <div style={{
+          position: 'relative',
+          bottom: '20px'
+        }}
+        >
+          <Img fluid={data.image.childImageSharp.fluid} />
+        </div>
 
         <div className='container'>
           <div className='lo-studio'>

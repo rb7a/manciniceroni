@@ -45,6 +45,9 @@ export default () => {
         #about-right-container p {
           color: var(--grey)
         }
+        #about-right-container h2 {
+          color: var(--main-color)
+        }
         #about-right-link{
           font-weight: 500;
           color: var(--grey);

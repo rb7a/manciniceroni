@@ -9,7 +9,6 @@ const Hero = () => (
       <h1>
         MANCINICERONI
       </h1>
-
       <p>Spirito di ascolto comprensione, competenza e perseveranza.</p>
       <div className='cta'>
         <Button link='/contatti' linkName='CONTATTI' />

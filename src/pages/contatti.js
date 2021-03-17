@@ -11,7 +11,7 @@ const myDivider = {
 
 export default () => {
   return (
-    <div>
+    <div id='contact-page'>
       <Header />
       <div
         className='container' style={{
@@ -32,10 +32,10 @@ export default () => {
           <p><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></p>
 
         </div>
-        <div>
+        <div id='maps-container'>
           <div
             style={{
-              marginTop: '80px'
+              marginTop: '0px'
             }} className='container-office'
           >
             <h3 className='address'>Ancona</h3>
@@ -89,7 +89,14 @@ export default () => {
               margin: 0 auto
             }
             .container-office {
-              width: 70%
+              width: 30%
+            }
+            #maps-container {
+              display: flex;
+              justify-content: space-between
+            }
+            #contact-page {
+              margin-top: 120px
             }
           }
           
