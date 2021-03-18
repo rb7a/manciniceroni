@@ -45,9 +45,7 @@ export default () => {
             <div className='professionisti-container'>
               <div className='professionista'>
                 <div
-                  className='img-container' style={{
-                    marginRight: '40px'
-                  }}
+                  className='img-container' id='img-container-1'
                 >
                   <Img fluid={data.image.childImageSharp.fluid} />
                 </div>
@@ -81,9 +79,7 @@ export default () => {
               </div>
               <div
                 className='professionista'
-                style={{
-                  marginBottom: '80px'
-                }}
+
               >
 
                 <div>
@@ -119,9 +115,7 @@ export default () => {
                   <p>Linkedin: <a href='https://www.linkedin.com/in/elisabetta-ceroni/' target='_blank'>Elisabetta Mancini</a></p>
                 </div>
                 <div
-                  className='img-container' style={{
-                    marginLeft: '40px'
-                  }}
+                  className='img-container' id='img-container-2'
                 >
                   <Img fluid={data.image2.childImageSharp.fluid} />
                 </div>
@@ -132,12 +126,16 @@ export default () => {
         <ContactCta />
       </Layout>
       <style jsx='true'>{`
-          
           .lo-studio p, 
           .lo-studio li {
               color: var(--grey)
           }
-        
+          .professionista h3 {
+            color: var(--main-color)
+          }
+          #img-container-1 {
+            margin-top: 40px;
+          }
           @media(min-width:968px){
             .lo-studio{
               margin-top: 60px ;
@@ -146,23 +144,24 @@ export default () => {
             }
             .img-container {
                width: 100%;
-               
             }
-          
+            #img-container-1 {
+              margin-right: 40px;
+              margin-top: 0
+            }
+            #img-container-2 {
+              margin-left: 40px
+            }
             .professionista {
               display: flex;
               justify-content: space-between;
               margin-top: 100px
-
             }
-
             #professionisti {
               margin-top: 140px
             }
-
           }
-        
-          `}
+      `}
       </style>
     </div>
   )

@@ -52,6 +52,11 @@ const Hero = () => (
           }
        
         @media (min-width: 1200px) {
+
+          .hero {
+            height: 80vh;
+            margin-top: 80px
+          }
           .hero h1 {
             font-size: 58px;
           }

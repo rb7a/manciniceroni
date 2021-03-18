@@ -16,7 +16,7 @@ export default () => {
     query {
       image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1900) {
+          fluid(maxWidth: 1900, maxHeight: 700) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -36,7 +36,6 @@ export default () => {
         >
           <Img fluid={data.image.childImageSharp.fluid} />
         </div>
-
         <div className='container'>
           <div className='lo-studio'>
             <h2>Lo Studio</h2>
@@ -73,6 +72,9 @@ export default () => {
           .lo-studio p, 
           .lo-studio li {
               color: var(--grey)
+          }
+          .lo-studio h2 {
+            color: var(--main-color)
           }
           @media(min-width:968px){
             .lo-studio{

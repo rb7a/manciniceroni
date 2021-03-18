@@ -81,6 +81,9 @@ export default () => {
           .lo-studio li {
               color: var(--grey)
           }
+          .lo-studio h2 {
+            color: var(--main-color)
+          }
           @media(min-width:968px){
             .lo-studio{
               margin-top: 60px ;

@@ -76,6 +76,12 @@ export default () => {
           .lo-studio li {
               color: var(--grey)
           }
+          .lo-studio h2 {
+            color: var(--main-color) !important
+          }
+          .container-office h3 {
+            color: var(--main-color) !important
+          }
           .contact-address {
               line-height: 12px
           }

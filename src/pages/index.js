@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import AboutHome from '../components/aboutHome'
 import Partners from '../components/partners'
-import ContactCta from '../components/contactCta'
+import Newsletter from '../components/newsletter'
 import Divider from '../components/divider'
 import { Helmet } from 'react-helmet'
 import icon1 from '../images/crediti-bancari-icon.png'
@@ -49,7 +49,7 @@ const IndexPage = () => (
       </div>
     </div>
     <Partners />
-    <ContactCta />
+    <Newsletter />
     <style jsx='true'>{`
 
     .services {

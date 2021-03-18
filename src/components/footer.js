@@ -35,8 +35,10 @@ const Footer = () => {
       </div>
       <div className='contact'>
         <p><strong>Contatti</strong></p>
-        <img id='icon' src={phone} />
-        <span className='footer-info'><a href='tel:+39  349 0887444'>+39  349 0887444</a></span>
+        <div>
+          <img id='icon' src={phone} />
+          <span className='footer-info'><a href='tel:+39  349 0887444'>+39  349 0887444</a></span>
+        </div>
         <div>
           <img id='icon' src={mail} />
           <span className='footer-info'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></span>
@@ -71,7 +73,12 @@ const Footer = () => {
         }
 
         .contact {
-          margin-top: 60px
+          margin-top: 60px;
+          
+        }
+        .contact div {
+          position: relative;
+          left: 70px
         }
         .footer-info-container h4, .contact strong {
           position: relative;
@@ -106,6 +113,12 @@ const Footer = () => {
        
         .contact strong {
           left: 0
+        }
+        .contact div {
+          left: 0px;
+        }
+        .contact span {
+          top: 0px;
         }
     }
          

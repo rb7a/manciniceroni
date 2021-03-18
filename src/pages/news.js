@@ -53,7 +53,10 @@ export default ({ data }) => {
           }
             @media(min-width:1200px){
               .blog-section{
-                width: 50%
+                width: 50%;
+                position: relative;
+                top: 80px;
+              
               }
             }
             `}
