@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://veggiemedcheeses.us4.list-manage.com/subscribe/post?u=b4c49b4080d8bbdf43682e3d8&amp;id=aa85edd348'
+        endpoint: 'https://manciniceronistudiolegale.us1.list-manage.com/subscribe/post?u=5523839e64f45046d0f542343&amp;id=16ba30f3a6'
       }
     },
     'gatsby-transformer-sharp',

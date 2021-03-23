@@ -95,7 +95,7 @@ const Newsletter = () => {
           top: 30px
       }
     }
-      `}
+`}
       </style>
     </section>
 

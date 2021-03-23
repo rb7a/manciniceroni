@@ -72,7 +72,6 @@ const Hero = () => (
             width: 60%;
             margin: 0 auto
           }
-         
           .cta-text {
             position: relative; 
             bottom: 22px !important

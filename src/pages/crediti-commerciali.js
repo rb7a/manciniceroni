@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import ContactCta from '../components/contactCta'
+import Newsletter from '../components/newsletter'
 import Img from 'gatsby-image'
 import icon1 from '../images/crediti-bancari-icon.png'
 
@@ -56,7 +56,7 @@ export default () => {
             <p>Lo Studio persegue altresì la valorizzazione dei crediti affidati, attuando una precisa strategia che mira a trasformare il singolo credito di difficile recuperabilità in un credito garantito da pegno e/o ipoteca, aumentando concretamente le prospettive di recupero.</p>
           </div>
         </div>
-        <ContactCta />
+        <Newsletter />
       </Layout>
       <style jsx='true'>{`
           

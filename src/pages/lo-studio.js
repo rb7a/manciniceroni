@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import ContactCta from '../components/contactCta'
+import Newsletter from '../components/newsletter'
 import Img from 'gatsby-image'
 
 const myDivider = {
@@ -65,10 +65,9 @@ export default () => {
             </p>
           </div>
         </div>
-        <ContactCta />
+        <Newsletter />
       </Layout>
       <style jsx='true'>{`
-          
           .lo-studio p, 
           .lo-studio li {
               color: var(--grey)
@@ -83,8 +82,7 @@ export default () => {
               margin: 0 auto
             }
           }
-        
-          `}
+       `}
       </style>
     </div>
   )

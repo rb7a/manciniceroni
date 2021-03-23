@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import ContactCta from '../components/contactCta'
+import Newsletter from '../components/newsletter'
 import Img from 'gatsby-image'
 
 const myDivider = {
@@ -123,7 +123,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <ContactCta />
+        <Newsletter />
       </Layout>
       <style jsx='true'>{`
           .lo-studio p, 

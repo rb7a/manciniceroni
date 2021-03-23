@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
-import ContactCta from '../components/contactCta'
+import Newsletter from '../components/newsletter'
 
 export default function BlogPost ({ data }) {
   const post = data.allWpPost.nodes[0]
@@ -46,7 +46,7 @@ export default function BlogPost ({ data }) {
         }
         `}
       </style>
-      <ContactCta />
+      <Newsletter />
     </Layout>
   )
 }

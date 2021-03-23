@@ -59,13 +59,9 @@ export default () => {
           </div>
           <div className='container-office'>
             <h3 className='address'>Fermo</h3>
-            <p className='contact-address'>Via Campogrande, 21
-, 63831
-            </p>
+            <p className='contact-address'>Via Campogrande, 2, 63831</p>
             <p className='contact-address'>+39 349 0887444</p>
-
             <p className='contact-address'><a href='mailto:info@manciniceronistudiolegale.it'>info@manciniceronistudiolegale.it</a></p>
-
             <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23284.535656828266!2d13.601889238361828!3d43.15562197914144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133208c4a625e875%3A0x1646e9711b967ad6!2svia%20Campogrande%2C%2063831%20Rapagnano%20FM%2C%20Italy!5e0!3m2!1sen!2ses!4v1611140259046!5m2!1sen!2ses' width='100%' height='400px' frameborder='0' allowfullscreen='' aria-hidden='false' tabindex='0' />
           </div>
         </div>
@@ -105,9 +101,7 @@ export default () => {
               margin-top: 120px
             }
           }
-          
-        
-          `}
+      `}
       </style>
       <Subfooter />
     </div>
