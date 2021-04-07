@@ -81,7 +81,7 @@ const Footer = () => {
           border-top: 2px solid #fff:
         }
         .contact strong {
-          border-top: 3px solid #fff;
+          border-top: 2px solid #fff;
           padding: 20px 40px;      
         }
         .contact div {

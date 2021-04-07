@@ -10,7 +10,7 @@ const Hero = () => (
       <h1>
         MANCINICERONI
       </h1> */}
-      <img src={logo} id='hero-logo' />
+      <img src={logo} />
       <p>Spirito di ascolto comprensione, competenza e perseveranza.</p>
       <div className='cta'>
         <Button link='/contatti' linkName='CONTATTI' />
@@ -26,9 +26,7 @@ const Hero = () => (
           justify-content: center;
           margin: 0 20px
         }
-        #hero-logo {
-          width: 50%
-        }
+     
         .hero-wrapper{
           margin-top: 80px
         }
@@ -62,9 +60,7 @@ const Hero = () => (
             height: 80vh;
             margin-top: 80px
           }
-          #hero-logo {
-          width: 15%
-        }
+       
           .hero h1 {
             font-size: 58px;
           }

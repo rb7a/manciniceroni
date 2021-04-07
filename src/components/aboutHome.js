@@ -61,7 +61,7 @@ export default () => {
         }
         .section-left {
           margin:0 10px;
-          box-shadow: var(--shadow);
+    
         }
         .section-right {
           position: relative;
