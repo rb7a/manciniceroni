@@ -1,14 +1,16 @@
 import React from 'react'
 import Button from './button'
 import { Link } from 'gatsby'
+import logo from '../images/logo-centrale.png'
 
 const Hero = () => (
   <section className='hero'>
     <div className='hero-wrapper'>
-      <span>GESTIONE E RECUPERO CREDITI</span>
+      {/* <span>GESTIONE E RECUPERO CREDITI</span>
       <h1>
         MANCINICERONI
-      </h1>
+      </h1> */}
+      <img src={logo} id='hero-logo' />
       <p>Spirito di ascolto comprensione, competenza e perseveranza.</p>
       <div className='cta'>
         <Button link='/contatti' linkName='CONTATTI' />
@@ -23,6 +25,9 @@ const Hero = () => (
           display: flex;
           justify-content: center;
           margin: 0 20px
+        }
+        #hero-logo {
+          width: 50%
         }
         .hero-wrapper{
           margin-top: 80px
@@ -57,6 +62,9 @@ const Hero = () => (
             height: 80vh;
             margin-top: 80px
           }
+          #hero-logo {
+          width: 15%
+        }
           .hero h1 {
             font-size: 58px;
           }
@@ -68,7 +76,7 @@ const Hero = () => (
           }
           .cta {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             width: 60%;
             margin: 0 auto
           }

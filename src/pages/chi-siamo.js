@@ -38,7 +38,7 @@ export default () => {
         </div>
         <div className='container'>
           <div className='lo-studio'>
-            <h2>Lo Studio</h2>
+            <h2>Chi Siamo</h2>
             <div style={myDivider} />
             <span><strong>Professionisti del recupero crediti, con l’obiettivo del rapido raggiungimento del risultato. Spirito di ascolto e comprensione, competenza e perseveranza.</strong>
             </span>

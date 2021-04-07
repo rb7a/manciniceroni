@@ -1,5 +1,8 @@
 import React from 'react'
 import Header from '../components/header'
+import Img from 'gatsby-image'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+
 import Subfooter from '../components/subfooter'
 
 const myDivider = {
@@ -10,9 +13,27 @@ const myDivider = {
 }
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "crediti-commerciali.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1900, maxHeight: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div id='contact-page'>
       <Header />
+      <div style={{
+        position: 'relative',
+        bottom: '20px'
+      }}
+      >
+        <Img fluid={data.image.childImageSharp.fluid} />
+      </div>
       <div
         className='container' style={{
           paddingBottom: '60px'

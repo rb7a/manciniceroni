@@ -1,20 +1,14 @@
 import React, { useState } from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import logoDesktop from '../images/logo-sinistra.png'
 
 export default () => {
   const data = useStaticQuery(graphql`
   query {
-    logoMobile: file(relativePath: { eq: "logo-manciniceroni-mobile.png" }) {
+    logoMobile: file(relativePath: { eq: "logo-sinistra.png" }) {
       childImageSharp {
-        fixed(width: 300) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "logo-manciniceroni.png" }) {
-      childImageSharp {
-        fixed(width: 400) {
+        fixed(width: 220) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -65,21 +59,21 @@ export default () => {
               </Link>
             </li>
             <li>
-              <Link to='/lo-studio'>LO STUDIO</Link>
+              <Link to='/chi-siamo'>CHI SIAMO</Link>
             </li>
             <li>
               <Link to='/professionisti'>PROFESSIONISTI</Link>
             </li>
             <li onClick={() => setSubMenu(!subMenu)}>
-              <Link to='#'>AREE DI ATTIVITÀ</Link>
+              <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
             </li>
             {subMenu && (
               <div className='submenu'>
                 <li>
-                  <Link to='/crediti-commerciali'>CREDITI COMMERCIALI</Link>
+                  <Link to='/aree-di-attivita/#crediti-commerciali'>CREDITI COMMERCIALI</Link>
                 </li>
                 <li>
-                  <Link to='/crediti-bancari'>CREDITI BANCARI</Link>
+                  <Link to='/aree-di-attivita/#crediti-bancari'>CREDITI BANCARI</Link>
                 </li>
               </div>)}
             <li>
@@ -97,7 +91,12 @@ export default () => {
       <nav className='desktop-menu'>
         <div style={{ width: '400px' }}>
           <Link to='/'>
-            <Img fixed={data.logo.childImageSharp.fixed} />
+            <img
+              src={logoDesktop} style={{
+                position: 'relative',
+                bottom: '15px'
+              }}
+            />
           </Link>
         </div>
         <ul>
@@ -105,7 +104,7 @@ export default () => {
             <Link to='/' activeStyle={activeStyles}>HOME</Link>
           </li>
           <li>
-            <Link to='/lo-studio' activeStyle={activeStyles}>LO STUDIO</Link>
+            <Link to='/chi-siamo' activeStyle={activeStyles}>CHI SIAMO</Link>
           </li>
           <li>
             <Link to='/professionisti' activeStyle={activeStyles}>PROFESSIONISTI</Link>
@@ -114,7 +113,7 @@ export default () => {
             onMouseEnter={() => setSubMenuDesktop(true)}
 
           >
-            <Link to='#' activeStyle={activeStyles}>AREE DI ATTIVITÀ</Link>
+            <Link to='/aree-di-attivita' activeStyle={activeStyles}>AREE DI ATTIVITÀ</Link>
           </li>
           <li>
             <Link to='/news' activeStyle={activeStyles}>NEWS</Link>
@@ -127,10 +126,10 @@ export default () => {
       {subMenuDesktop && (
         <div className='submenu-desktop'>
           <li>
-            <Link to='/crediti-commerciali'>CREDITI COMMERCIALI</Link>
+            <Link to='/aree-di-attivita/#crediti-commerciali'>CREDITI COMMERCIALI</Link>
           </li>
           <li>
-            <Link to='/crediti-bancari'>CREDITI BANCARI</Link>
+            <Link to='/aree-di-attivita/#crediti-bancari'>CREDITI BANCARI</Link>
           </li>
         </div>)}
 

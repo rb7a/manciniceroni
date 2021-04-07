@@ -5,6 +5,7 @@ import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
 import icon1 from '../images/crediti-bancari-icon.png'
 import icon2 from '../images/crediti-commerciali-icon .png'
+import Newsletter from '../components/newsletter'
 
 const myDivider = {
   width: '80px',
@@ -16,9 +17,9 @@ const myDivider = {
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "aree-di-attivita.jpg" }) {
+      image: file(relativePath: { eq: "crediti-bancari.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1900) {
+          fluid(maxWidth: 1900, maxHeight: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -36,7 +37,7 @@ export default () => {
             <span><strong>Un solo settore, per garantire servizi di qualità.</strong>
               <p>Lo Studio Legale ManciniCeroni si occupa in via esclusiva e specialistica del settore del recupero crediti, distinto in due principali aree di attività:
               </p>
-              <ul>
+              <ul id='crediti-commerciali'>
                 <li>Gestione e recupero crediti commerciali</li>
                 <li>Gestione e recupero crediti bancari NPL - UTP.</li>
               </ul>
@@ -48,18 +49,14 @@ export default () => {
                 width: '64px'
               }} src={icon1}
             />
-            <h3
-
-              id='crediti-commerciali'
-            >GESTIONE E RECUPERO CREDITI COMMERCIALI
-
+            <h3>GESTIONE E RECUPERO CREDITI COMMERCIALI
             </h3>
             <p>ManciniCeroni fornisce assistenza in favore di piccole e medie imprese, artigiani e professionisti, per la gestione ed il recupero di crediti commerciali.
             </p>
             <p>I Professionisti dello Studio hanno acquisito nel corso degli anni un elevato grado di competenza e specializzazione collaborando con primari Studi legali e Società di recupero crediti, all’interno dei dipartimenti di contenzioso giudiziale e credit collection. </p>
             <p>Lo Studio è quindi in grado di fornire autonoma assistenza nella gestione e nel recupero dei crediti commerciali, in fase stragiudiziale, giudiziale ed esecutiva, nonché nelle procedure concorsuali (fallimenti; concordati).</p>
             <p>Lo Studio esegue l’attività necessaria e preventivamente concordata con il Cliente, per il rapido recupero del credito, maturando esclusivamente un compenso a risultato parametrato sull’effettivo credito recuperato. </p>
-            <p>Lo Studio persegue altresì la valorizzazione dei crediti affidati, attuando una precisa strategia che mira a trasformare il singolo credito di difficile recuperabilità in un credito garantito da pegno e/o ipoteca, aumentando concretamente le prospettive di recupero.</p>
+            <p id='crediti-bancari'>Lo Studio persegue altresì la valorizzazione dei crediti affidati, attuando una precisa strategia che mira a trasformare il singolo credito di difficile recuperabilità in un credito garantito da pegno e/o ipoteca, aumentando concretamente le prospettive di recupero.</p>
             <img
               style={{
                 display: 'block',
@@ -67,7 +64,7 @@ export default () => {
                 width: '64px'
               }} src={icon2}
             />
-            <h3 id='crediti-bancari'>GESTIONE E RECUPERO CREDITI BANCARI NPL - UTP
+            <h3>GESTIONE E RECUPERO CREDITI BANCARI NPL - UTP
             </h3>
             <p>ManciniCeroni fornisce assistenza in favore di banche ed Intermediari Finanziari per la gestione ed il recupero di crediti bancari deteriorati <em>Non Performing Loans (NPL) ed Unlikely to Pay (UTP).</em></p>
             <p>I Professionisti dello Studio hanno acquisito nel corso degli anni un elevato grado di competenza e specializzazione collaborando con primari Studi legali e Società di recupero crediti, in qualità di gestori/asset manager nonché di legali interni. </p>
@@ -95,7 +92,7 @@ export default () => {
             </p>
           </div>
         </div>
-        <ContactCta />
+        <Newsletter />
       </Layout>
       <style jsx='true'>{`
           
@@ -113,6 +110,7 @@ export default () => {
         
           `}
       </style>
+
     </div>
   )
 }
