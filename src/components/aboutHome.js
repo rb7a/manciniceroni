@@ -79,6 +79,10 @@ export default () => {
         .half-section {
           min-width: 50%;
         }
+        .section-right {
+          
+          bottom: 60px
+        }
        
         .section-left{
           margin: 0 0 0 40px
