@@ -63,13 +63,13 @@ export default () => {
                   </ul>
                   <p><strong>Esperienze:</strong>
                   </p>
-                  <p>Ha collaborato con primari Studi Legali, banche e Società specializzate in recupero crediti, prestando consulenza per la gestione ed il recupero di crediti di derivazione commerciale e bancaria. </p>
-                  <p>Ha fornito consulenza in qualità di gestore/asset manager e legale interno in favore di: </p>
+                  <p>Ha collaborato con primari Studi Legali, banche e intermediari finanziari, prestando assistenza per la gestione ed il recupero di crediti di derivazione commerciale e bancaria. </p>
+                  <p>Ha fornito consulenza in qualità di loan manager e legale interno in favore di: </p>
                   <ul>
                     <li>Juliet S.p.A. (gruppo Cerved S.p.A.); </li>
                     <li>FBS S.p.A. (gruppo Banca IFIS S.p.A.); </li>
                     <li>La Scala Società Tra Avvocati Per Azioni; </li>
-                    <li>Studio legale internazionale Bacciardi and Partners. </li>
+                    <li>Bacciardi and Partners studio legale internazionale.  </li>
                   </ul>
                   <p><strong>Contatti</strong></p>
                   <p>Tel: 349 0887444</p>
@@ -95,24 +95,26 @@ export default () => {
                   </ul>
                   <p><strong>Esperienze:</strong>
                   </p>
-                  <p>Ha collaborato con primari Studi Legali e Società specializzate in recupero crediti, prestando consulenza per la gestione ed il recupero di crediti di derivazione commerciale ed utilities. </p>
-                  <p>Ha fornito consulenza in qualità di legale interno in favore di:  </p>
+                  <p>Ha collaborato con primari Studi Legali e intermediari finanziari, prestando assistenza per la gestione ed il recupero di crediti di derivazione commerciale ed utilities. </p>
+                  <p>Ha fornito consulenza in qualità di legale esterno in favore di:  </p>
                   <ul>
+                    <li>Europa Factor S.p.A.;
+                    </li>
                     <li>Euro Service S.p.A.;
                     </li>
                     <li>Studio legale Natali Mei; </li>
-                    <li>Studio legale internazionale Bacciardi and Partners;
+                    <li>Bacciardi and Partners studio legale internazionale ;
                     </li>
                     <li>Studio legale Emiliani & Associati.
                     </li>
                   </ul>
                   <p>Professionista Delegata alle vendite nelle procedure esecutive immobiliari presso il Tribunale di Fermo.</p>
-                  <p>Docente di Diritto ed Economia presso le Scuole secondarie Superiori.
+                  <p>Docente di Diritto ed Economia presso le Scuole secondarie di secondo grado.
                   </p>
                   <p><strong>Contatti</strong></p>
                   <p>Tel: 334 6775287</p>
                   <p>Email: <a href='mailto: elisabetta@manciniceronistudiolegale.it   '> elisabetta@manciniceronistudiolegale.it   </a></p>
-                  <p>Linkedin: <a href='https://www.linkedin.com/in/elisabetta-ceroni/' target='_blank'>Elisabetta Mancini</a></p>
+                  <p>Linkedin: <a href='https://www.linkedin.com/in/elisabetta-ceroni/' target='_blank'>Elisabetta Ceroni</a></p>
                 </div>
                 <div
                   className='img-container' id='img-container-2'

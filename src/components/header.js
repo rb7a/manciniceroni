@@ -59,7 +59,7 @@ export default () => {
               </Link>
             </li>
             <li>
-              <Link to='/chi-siamo'>CHI SIAMO</Link>
+              <Link to='/lo-studio'>LO STUDIO</Link>
             </li>
             <li>
               <Link to='/professionisti'>PROFESSIONISTI</Link>
@@ -104,7 +104,7 @@ export default () => {
             <Link to='/' activeStyle={activeStyles}>HOME</Link>
           </li>
           <li>
-            <Link to='/chi-siamo' activeStyle={activeStyles}>CHI SIAMO</Link>
+            <Link to='/lo-studio' activeStyle={activeStyles}>LO STUDIO</Link>
           </li>
           <li>
             <Link to='/professionisti' activeStyle={activeStyles}>PROFESSIONISTI</Link>

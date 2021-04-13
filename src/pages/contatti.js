@@ -42,7 +42,7 @@ export default () => {
         <div className='lo-studio'>
           <h2>Contatti</h2>
           <div style={myDivider} />
-          <span><strong>Ne vuoi sapere di più? Mettiti in contatto con noi, saremo felici di fare la tua conoscenza.</strong>
+          <span><strong>Mettiti in contatto con noi, ti forniremo tutto il supporto necessario.</strong>
           </span>
           <p style={{
             marginTop: '40px'

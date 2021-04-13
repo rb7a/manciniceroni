@@ -38,7 +38,7 @@ export default () => {
         </div>
         <div className='container'>
           <div className='lo-studio'>
-            <h2>Chi Siamo</h2>
+            <h2>Lo Studio</h2>
             <div style={myDivider} />
             <span><strong>Professionisti del recupero crediti, con l’obiettivo del rapido raggiungimento del risultato. Spirito di ascolto e comprensione, competenza e perseveranza.</strong>
             </span>
@@ -48,12 +48,12 @@ export default () => {
             >Lo Studio Legale ManciniCeroni si occupa in via esclusiva di recupero crediti e svolge la propria attività in favore di piccole e medie imprese, artigiani, professionisti, banche e Intermediari Finanziari.
             </p>
             <p>Lo Studio è specializzato nella gestione e nel recupero di crediti commerciali e bancari e fornisce un servizio di eccellenza, basato sulla qualità, sulla rapidità e sul raggiungimento dei risultati.</p>
-            <p>ManciniCeroni adotta un preciso metodo acquisito attraverso una consolidata esperienza maturata negli anni attraverso la collaborazione con primari Studi legali del settore e Società di recupero crediti.</p>
+            <p>ManciniCeroni adotta un preciso metodo acquisito attraverso una consolidata esperienza maturata negli anni tramite la collaborazione con primari Studi legali del settore, banche e intermediari finanziari.</p>
             <p>Lo Studio in particolare presta servizi su misura, indentificati come “servizi di artigianato legale innovativo”, che consentono al Cliente di:</p>
             <ul>
-              <li>Gestire e recuperare i propri crediti rapidamente.
+              <li>Gestire e recuperare i propri crediti rapidamente;
               </li>
-              <li>Evitare costi e spese in mancanza di un effettivo recupero.
+              <li>Evitare o ridurre i costi e le spese in mancanza di un effettivo recupero;
               </li>
               <li>Ottenere la tutela e la valorizzazione dei propri crediti.
               </li>
@@ -61,7 +61,7 @@ export default () => {
             <p style={{
               marginBottom: '40px'
             }}
-            >L’approccio dello Studio si differenzia all’interno dell’attuale panorama legale, per il rapporto di fiducia, trasparenza e collaborazione che viene instaurato con il Cliente, fondato sull’ascolto e sulla comprensione e finalizzato al rapido raggiungimento dei risultati,  attraverso un servizio di qualità che ha come fondamenta i valori della gentilezza, della dignità e dell’umanità, che contraddistinguono la filosofia dello Studio Mancini Ceroni.
+            >L’approccio dello Studio si caratterizza altresì per il rapporto di fiducia, trasparenza e collaborazione che viene instaurato con il Cliente, fondato sull’ascolto e sulla comprensione e finalizzato al rapido raggiungimento dei risultati,  attraverso un servizio di elevata professionalità.
             </p>
           </div>
         </div>

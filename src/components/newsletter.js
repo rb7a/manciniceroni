@@ -23,7 +23,7 @@ const Newsletter = () => {
     <section className='newsletter'>
       <div>
         <h2>Iscriviti alla nostra newsletter</h2>
-        <p>Rimani aggiornato sulle nostre attività.</p>
+        <p>Scopri le ultime novità sulla gestione e recupero crediti.</p>
       </div>
       <div id='newsletter-form'>
         <form onSubmit={handleSubmit}>

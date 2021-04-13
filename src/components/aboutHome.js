@@ -32,7 +32,7 @@ export default () => {
           <h2>Chi Siamo</h2>
           <div style={myDivider} />
           <p>
-          ManciniCeroni   è   uno   Studio   Legale   Boutique,che   presta   servizi   in   via   esclusiva   especialistica nel settore del recupero crediti, alfine   di   fornire   una   consulenza   di   elevataqualità. Lo   Studio   nasce   dall’idea   degli   Avv.ti   NicolaMancini ed Elisabetta Ceroni, con la finalità dioffrire al Cliente servizi su misura, indentificaticome “servizi di artigianato legale innovativo”,in   uno   specifico   ramo   del   diritto,   quello  dellagestione e del recupero crediti di derivazionecommerciale e bancaria.Lo   Studio   ha   le   proprie   sedi   nel   territorioromagnolo-marchigiano,   in   Ancona,   Fermo   e Forlì-Cesena
+          ManciniCeroni   è   uno   Studio   Legale   Boutique,che   presta   servizi   in   via   esclusiva   especialistica nel settore del recupero crediti, alfine   di   fornire   una   consulenza   di   elevataqualità. Lo   Studio   nasce   dall’idea   degli   Avv.ti   NicolaMancini ed Elisabetta Ceroni, con la finalità dioffrire al Cliente servizi su misura, indentificaticome “servizi di artigianato legale innovativo”,in   uno   specifico   ramo   del   diritto,   quello  dellagestione e del recupero crediti di derivazionecommerciale e bancaria.Lo Studio ha le proprie sedi   nel   territorio marchigiano-romagnolo,   in   Ancona,   Fermo   e Forlì-Cesena
           </p>
           <Link to='/chi-siamo' id='about-right-link'>> Scopri di più </Link>
 
@@ -43,8 +43,11 @@ export default () => {
             padding: 80px 20px;
         }
         #about-right-container p {
-          color: var(--grey)
+          color: var(--grey);
+          position: relative;
+          bottom: 20px
         }
+        
         #about-right-container h2 {
           color: var(--main-color)
         }
@@ -88,7 +91,8 @@ export default () => {
           margin: 0 0 0 40px
         }
         #about-right-link{
-            padding-bottom: 0
+            padding-bottom: 0;
+            
         }
       }
     `}
