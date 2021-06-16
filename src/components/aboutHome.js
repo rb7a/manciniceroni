@@ -32,9 +32,13 @@ export default () => {
           <h2>Chi Siamo</h2>
           <div style={myDivider} />
           <p>
-          ManciniCeroni   è   uno   Studio   Legale   Boutique,che   presta   servizi   in   via   esclusiva   especialistica nel settore del recupero crediti, alfine   di   fornire   una   consulenza   di   elevataqualità. Lo   Studio   nasce   dall’idea   degli   Avv.ti   NicolaMancini ed Elisabetta Ceroni, con la finalità dioffrire al Cliente servizi su misura, indentificaticome “servizi di artigianato legale innovativo”,in   uno   specifico   ramo   del   diritto,   quello  dellagestione e del recupero crediti di derivazionecommerciale e bancaria.Lo Studio ha le proprie sedi   nel   territorio marchigiano-romagnolo,   in   Ancona,   Fermo   e Forlì-Cesena
+          ManciniCeroni è uno Studio Legale Boutique, che presta servizi in via esclusiva e specialistica nel settore del recupero crediti, per fornire una consulenza di elevata qualità.
+
+Lo Studio nasce dall’idea degli Avv.ti Nicola Mancini ed Elisabetta Ceroni, con la finalità di offrire al Cliente servizi su misura, indentificati come “servizi di artigianato legale innovativo”, in uno specifico ramo del diritto, quello della gestione e del recupero crediti di derivazione commerciale e bancaria.
+
+Lo Studio ha le proprie sedi nel territorio marchigiano-romagnolo, in Ancona, Fermo e Forlì-Cesena.
+
           </p>
-          <Link to='/chi-siamo' id='about-right-link'>> Scopri di più </Link>
 
         </div>
       </div>

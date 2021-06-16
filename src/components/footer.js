@@ -1,14 +1,12 @@
 import React from 'react'
 import Subfooter from '../components/subfooter'
-import phone from '../images/phone.png'
-import mail from '../images/mail.png'
 import whiteLogo from '../images/logo-bianco.png'
 import { Link } from 'gatsby'
 
 const Footer = () => {
   return (
     <div className='footer'>
-      <img src={whiteLogo} id='logo-footer' />
+      {/* <img src={whiteLogo} id='logo-footer' /> */}
       <div className='footer-info-main-container'>
         <div className='footer-info-container'>
           <h4 className='title-section'>Contatti</h4>
@@ -25,11 +23,9 @@ const Footer = () => {
         </div>
         <div className='footer-info-container'>
           <h4>Risorse Utili</h4>
-          <p><Link to=''>Privacy Policy</Link>
+          <p><Link to='/policy'>Policy</Link>
           </p>
-          <p><Link to=''>Cookie Policy</Link>
-          </p>
-          <p><Link to=''>Note Legali</Link>
+          <p><Link to='/note-legali'>Note Legali</Link>
           </p>
 
         </div>
@@ -44,8 +40,10 @@ const Footer = () => {
              display:block;
              margin: 60px 0px 0px;
              background-color: var(--main-color);
-             padding: 40px 10px 0;  
-             color: #fff  
+             padding: 40px 10px 20px;  
+             color: #fff;
+             position: relative;
+             top: 20px
          }
          #logo-footer {
            display: block;
@@ -53,10 +51,13 @@ const Footer = () => {
          }
 
         .footer-info-main-container {
-            margin-top: 60px
+            margin-top: 40px
         }
         .footer-info-container {
-            margin-top: 40px;
+            margin-top: 20px;
+        }
+        .footer-info-container p {
+            line-height: 90%;
         }
         .footer-info-container a {
             color: #fff
@@ -98,6 +99,9 @@ const Footer = () => {
        
     
     @media(min-width: 968px){
+        .footer {
+          padding-bottom: 10px
+        }
         .footer-info-main-container {
              display: flex;
              justify-content: space-evenly;
@@ -134,7 +138,7 @@ const Footer = () => {
          
          `}
       </style>
-      <Subfooter />
+      {/* <Subfooter /> */}
     </div>
   )
 }

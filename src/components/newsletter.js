@@ -44,7 +44,9 @@ const Newsletter = () => {
         text-align: center;
         padding: 60px 4% 120px;
         position: relative;
-        top:60px
+        top:80px;
+        position: relative;
+        
       }
       .newsletter h2 {
           color: var(--main-color)

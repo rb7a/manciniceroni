@@ -19,7 +19,7 @@ export default () => {
     query {
       image: file(relativePath: { eq: "crediti-bancari.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1900, maxHeight: 500) {
+          fluid(maxWidth: 1900, maxHeight: 600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -29,7 +29,9 @@ export default () => {
   return (
     <div>
       <Layout>
-        <Img fluid={data.image.childImageSharp.fluid} />
+        <div className='img-container'>
+          <Img fluid={data.image.childImageSharp.fluid} />
+        </div>
         <div className='container'>
           <div className='lo-studio'>
             <h2>Aree di Attività</h2>
@@ -97,7 +99,11 @@ export default () => {
         <Newsletter />
       </Layout>
       <style jsx='true'>{`
-          
+      .img-container {
+       position: relative;
+       bottom: 20px;
+       margin-bottom: 20px
+     }
           .lo-studio p, 
           .lo-studio li {
               color: var(--grey)

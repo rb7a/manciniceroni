@@ -19,7 +19,8 @@ export default function BlogPost ({ data }) {
           margin: 0 10px
         }
         .blog-content h1 {
-          font-size: 22px
+          font-size: 22px;
+          color: var(--main-color)
         }
         .blog-content p {
           color: var(--grey)

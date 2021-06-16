@@ -17,7 +17,6 @@ const Subfooter = () => (
                }
                @media(min-width: 968px){
                 .subfooter{
-                   
                    margin-top: 60px
                }
                }

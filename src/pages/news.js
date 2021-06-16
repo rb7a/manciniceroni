@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+
 import Layout from '../components/layout'
 
 export default ({ data }) => {
@@ -9,6 +11,9 @@ export default ({ data }) => {
         <title>Our Mission | VeggieMedCheeses</title>
       </Helmet>
       <Title title='NEWS' /> */}
+      <div className='img-container'>
+        <Img fluid={data.image.childImageSharp.fluid} />
+      </div>
       <section className='container blog-section' style={{ marginTop: '40px', marginBottom: '180px' }}>
         {data.allWpPost.nodes.map(node => (
 
@@ -30,11 +35,18 @@ export default ({ data }) => {
         ))}
       </section>
       <style jsx='true'>{`
+      .img-container {
+       position: relative;
+       bottom: 20px;
+       margin-bottom: 20px
+     }
+
             .blog-section{
                 width: 95%;
             }
             .blog-section h2 {
-              font-size: 18px
+              font-size: 18px;
+              color: var(--main-color)
             }
             .blog-excerpt{
                 color: #777;
@@ -54,8 +66,7 @@ export default ({ data }) => {
             @media(min-width:1200px){
               .blog-section{
                 width: 50%;
-                position: relative;
-                top: 80px;
+                
               
               }
             }
@@ -77,6 +88,13 @@ export const pageQuery = graphql`
           node {
             mediaItemUrl
           }
+        }
+      }
+    }
+    image: file(relativePath: { eq: "news-img.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1900, maxHeight: 600) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

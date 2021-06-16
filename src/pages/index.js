@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
+import Img from 'gatsby-image'
 
 import Hero from '../components/hero'
 import AboutHome from '../components/aboutHome'
@@ -11,47 +12,68 @@ import { Helmet } from 'react-helmet'
 import icon1 from '../images/crediti-bancari-icon.png'
 import icon2 from '../images/crediti-commerciali-icon .png'
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    image: file(relativePath: { eq: "hero-img.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1900, maxHeight: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`)
+  return (
+    <Layout>
 
-    <Helmet>
-      <title>MANCINICERIONI | Gestione E Recupero Crediti</title>
-    </Helmet>
-    <div id='hero'>
-      <Hero />
-    </div>
-    <AboutHome />
-    <div className='services'>
-      <h2>Aree Di Attività</h2>
-      <Divider />
-      <p className='subtitle'>Lo studio si occupa del settore del recupero crediti, distinto in due principali aree di attività.</p>
-      <div className='single-service-container'>
-        <div className='single-service'>
-          <img src={icon1} style={{ display: 'block', margin: '0 auto' }} />
-          <p><strong>GESTIONE E RECUPERO CREDITI BANCARI</strong></p>
-          <p>Lo Studio fornisce assistenza in favore di piccole e medie imprese, artigiani e professionisti, per la gestione ed il recupero di crediti commerciali.</p>
-          <p style={{
-            marginTop: '40px'
-          }}
-          ><Link to='/aree-di-attivita/#crediti-bancari'>> Scopri di più</Link>
-          </p>
-        </div>
-        <div className='single-service'>
-          <img src={icon2} style={{ display: 'block', margin: '0 auto' }} />
-          <p><strong>GESTIONE E RECUPERO CREDITI COMMERCIALI</strong></p>
-          <p>ManciniCeroni fornisce assistenza in favore di banche ed Intermediari Finanziari per la gestione ed il recupero di crediti bancari deteriorati <em>Non Performing Loans (NPL) ed Unlikely to Pay (UTP)</em>.</p>
-          <p style={{
-            marginTop: '40px'
-          }}
-          ><Link to='/aree-di-attivita/#crediti-commerciali'>> Scopri di più</Link>
-          </p>
+      <Helmet>
+        <title>MANCINICERIONI | Gestione E Recupero Crediti</title>
+      </Helmet>
+
+      <div className='img-container'>
+        <Img fluid={data.image.childImageSharp.fluid} />
+      </div>
+      {/* <div id='hero'>
+        <Hero />
+      </div> */}
+      <AboutHome />
+      <div className='services'>
+        <h2>Aree Di Attività</h2>
+        <Divider />
+        <p className='subtitle'>Lo Studio distingue il proprio settore di competenza in due principali aree di attività:
+        </p>
+        <div className='single-service-container'>
+          <div className='single-service'>
+            <img src={icon1} style={{ display: 'block', margin: '0 auto' }} />
+            <p><strong>GESTIONE E RECUPERO CREDITI BANCARI</strong></p>
+            <p>Lo Studio fornisce assistenza in favore di piccole e medie imprese, artigiani e professionisti, per la gestione ed il recupero di crediti commerciali.</p>
+            <p style={{
+              marginTop: '40px'
+            }}
+            ><Link to='/aree-di-attivita/#crediti-bancari'>> Scopri di più</Link>
+            </p>
+          </div>
+          <div className='single-service'>
+            <img src={icon2} style={{ display: 'block', margin: '0 auto' }} />
+            <p><strong>GESTIONE E RECUPERO CREDITI COMMERCIALI</strong></p>
+            <p>ManciniCeroni fornisce assistenza in favore di banche ed Intermediari Finanziari per la gestione ed il recupero di crediti bancari deteriorati <em>Non Performing Loans (NPL) ed Unlikely to Pay (UTP)</em>.</p>
+            <p style={{
+              marginTop: '40px'
+            }}
+            ><Link to='/aree-di-attivita/#crediti-commerciali'>> Scopri di più</Link>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <Partners />
-    <Newsletter />
-    <style jsx='true'>{`
-
+      <Partners />
+      <Newsletter />
+      <style jsx='true'>{`
+     .img-container {
+       position: relative;
+       bottom: 20px;
+       margin-bottom: 20px
+     }
     .services {
       position: relative;
       bottom: 60px;
@@ -80,13 +102,18 @@ const IndexPage = () => (
           display: block;
           margin: 0 auto
         }
+        .single-service strong {
+          color: var(--main-color)
+        }
         
         .single-service-container {
           margin-top: 60px
         }
         
       @media(min-width: 960px){
-
+        .img-container {
+           margin-bottom: 80px
+         }
         #hero {
           position: relative;
           top: 40px
@@ -109,9 +136,10 @@ const IndexPage = () => (
       }
    
       `}
-    </style>
+      </style>
 
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default IndexPage

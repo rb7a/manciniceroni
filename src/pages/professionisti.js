@@ -29,6 +29,13 @@ export default () => {
           }
         }
       }
+      imageHero: file(relativePath: { eq: "professionisti-img.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1900, maxHeight: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -37,11 +44,16 @@ export default () => {
   return (
     <div>
       <Layout>
+        <div className='img-container'>
+          <Img fluid={data.imageHero.childImageSharp.fluid} />
+        </div>
         <div className='container' id='professionisti'>
           <div className='lo-studio'>
             <h2>Professionisti</h2>
             <div style={myDivider} />
             <span><strong>A supporto del Cliente con entusiasmo e dedizione.</strong></span>
+            <p>Lo Studio è costituito dagli Avv.ti Nicola Mancini ed Elisabetta Ceroni e si avvale di collaboratori e domiciliatari, per assistere il Cliente su tutto il territorio nazionale.
+            </p>
             <div className='professionisti-container'>
               <div className='professionista'>
                 <div
@@ -128,11 +140,22 @@ export default () => {
         <Newsletter />
       </Layout>
       <style jsx='true'>{`
+
+      .img-container {
+       position: relative;
+       bottom: 20px;
+     }
           .lo-studio p, 
           .lo-studio li {
               color: var(--grey)
           }
+          h2 {
+            color: var(--main-color)
+          }
           .professionista h3 {
+            color: var(--main-color)
+          }
+          .professionista strong {
             color: var(--main-color)
           }
           #img-container-1 {
@@ -140,7 +163,6 @@ export default () => {
           }
           @media(min-width:968px){
             .lo-studio{
-              margin-top: 60px ;
               width: 100%;
               margin: 0 auto
             }
@@ -160,7 +182,7 @@ export default () => {
               margin-top: 100px
             }
             #professionisti {
-              margin-top: 140px
+              margin-top: 40px
             }
           }
       `}

@@ -16,7 +16,7 @@ export default () => {
     query {
       image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1900, maxHeight: 700) {
+          fluid(maxWidth: 1900, maxHeight: 600) {
             ...GatsbyImageSharpFluid
           }
         }
