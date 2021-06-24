@@ -15,14 +15,14 @@ const myDivider = {
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "nicola-mancini.jpeg" }) {
+      image: file(relativePath: { eq: "nicola-mancini.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1900) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      image2: file(relativePath: { eq: "elisabetta-ceroni.jpeg" }) {
+      image2: file(relativePath: { eq: "elisabetta-ceroni.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1900) {
             ...GatsbyImageSharpFluid
