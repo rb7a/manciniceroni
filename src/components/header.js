@@ -35,58 +35,62 @@ export default () => {
           {' '}
           <Img fixed={data.logoMobile.childImageSharp.fixed} />
         </Link>
-        {visible ? (
-          <div onClick={showMobileMenu} className='burger-icon-close'>
-            <span>X</span>
-          </div>
-        ) : (
-          <div onClick={showMobileMenu} className='burger-icon-open'>
-            <span />
-            <span />
-            <span />
-          </div>
-        )}
+        {visible
+          ? (
+            <div onClick={showMobileMenu} className='burger-icon-close'>
+              <span>X</span>
+            </div>
+            )
+          : (
+            <div onClick={showMobileMenu} className='burger-icon-open'>
+              <span />
+              <span />
+              <span />
+            </div>
+            )}
       </section>
 
-      {visible ? (
-        <nav className='mobile-menu'>
-          <ul>
-            <li>
-              <Link
-                to='/'
-                activeClassName='active'
-              >HOME
-              </Link>
-            </li>
-            <li>
-              <Link to='/lo-studio'>LO STUDIO</Link>
-            </li>
-            <li>
-              <Link to='/professionisti'>PROFESSIONISTI</Link>
-            </li>
-            <li onClick={() => setSubMenu(!subMenu)}>
-              <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
-            </li>
-            {subMenu && (
-              <div className='submenu'>
-                <li>
-                  <Link to='/aree-di-attivita/#crediti-commerciali'>CREDITI COMMERCIALI</Link>
-                </li>
-                <li>
-                  <Link to='/aree-di-attivita/#crediti-bancari'>CREDITI BANCARI</Link>
-                </li>
-              </div>)}
-            <li>
-              <Link to='/news'>NEWS</Link>
-            </li>
-            <li>
-              <Link to='/contatti'>CONTATTI</Link>
-            </li>
-          </ul>
-        </nav>
-      ) : (
-        <p />
-      )}
+      {visible
+        ? (
+          <nav className='mobile-menu'>
+            <ul>
+              <li>
+                <Link
+                  to='/'
+                  activeClassName='active'
+                >HOME
+                </Link>
+              </li>
+              <li>
+                <Link to='/lo-studio'>LO STUDIO</Link>
+              </li>
+              <li>
+                <Link to='/professionisti'>PROFESSIONISTI</Link>
+              </li>
+              <li onClick={() => setSubMenu(!subMenu)}>
+                <Link to='/aree-di-attivita'>AREE DI ATTIVITÀ</Link>
+              </li>
+              {subMenu && (
+                <div className='submenu'>
+                  <li>
+                    <Link to='/aree-di-attivita/#crediti-commerciali'>CREDITI COMMERCIALI</Link>
+                  </li>
+                  <li>
+                    <Link to='/aree-di-attivita/#crediti-bancari'>CREDITI BANCARI</Link>
+                  </li>
+                </div>)}
+              <li>
+                <Link to='/news'>NEWS</Link>
+              </li>
+              <li>
+                <Link to='/contatti'>CONTATTI</Link>
+              </li>
+            </ul>
+          </nav>
+          )
+        : (
+          <p />
+          )}
 
       <nav className='desktop-menu'>
         <div style={{ width: '400px' }}>
@@ -95,7 +99,7 @@ export default () => {
               src={logoDesktop} style={{
                 position: 'relative',
                 bottom: '15px',
-                height:"83px"
+                height: '83px'
               }}
             />
           </Link>

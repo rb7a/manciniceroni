@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Newsletter from '../components/newsletter'
 import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
 
@@ -52,8 +51,7 @@ export default () => {
             <span><strong> L’APPROCCIO CHE FA LA DIFFERENZA</strong></span>
             <p>Il nostro modo di affrontare i casi è smart, veloce nell’adattarsi alle dinamiche e capace di raggiungere il risultato integrando soluzioni innovative.</p>
             <p>Lavoriamo a stretto contatto con il cliente condividendo le criticità e la scelta delle soluzioni da attivare in modo da gestire con chiarezza e trasparenza ogni passaggio. In caso di necessità abbiamo la possibilità di attivare collaboratori esterni che ci permettono di garantire la migliore combinazione di professionalità ed efficienza del lavoro.</p>
-           
-            <span><strong> ARTIGIANATO LEGALE INNOVATIVO</strong></span>
+            <span><strong> ARTIGIANATO LEGALE INNOVATIVO </strong></span>
             <p>Forniamo ai nostri clienti “servizi di artigianato legale innovativo”, che consentono al cliente di:</p>
             <ul>
               <li>Gestire e recuperare i propri crediti rapidamente;

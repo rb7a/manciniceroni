@@ -1,7 +1,6 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Newsletter from '../components/newsletter'
 import Img from 'gatsby-image'
 import icon2 from '../images/crediti-commerciali-icon .png'
 
@@ -73,7 +72,7 @@ export default () => {
             </p>
           </div>
         </div>
-        <Newsletter />
+        <ContactCta />
       </Layout>
       <style jsx='true'>{`
           

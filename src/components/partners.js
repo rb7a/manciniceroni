@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from './button'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import {useStaticQuery, graphql } from 'gatsby'
 import Divider from '../components/divider'
 import Img from 'gatsby-image'
 

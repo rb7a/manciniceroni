@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Newsletter from '../components/newsletter'
 import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
 
@@ -94,14 +93,13 @@ export default () => {
                   <p><strong>Contatti</strong></p>
                   <p>Tel: 334 6775287</p>
                   <p>Email: <a href='mailto: elisabetta@ceronimancini.it'> elisabetta@ceronimancini.it</a></p>
-                  <p>Linkedin: <a href='https://www.linkedin.com/in/elisabetta-ceroni/' target='_blank'>Elisabetta Ceroni</a></p>
+                  <p>Linkedin: <a href='https://www.linkedin.com/in/elisabetta-ceroni/' target='_blank' rel='noreferrer'>Elisabetta Ceroni</a></p>
                 </div>
-                
               </div>
               <div
                 className='professionista'
               >
-              <div>
+                <div>
                   <h3>Avv. Nicola Mancini</h3>
                   <p><strong>Formazione:</strong></p>
                   <ul>
@@ -128,9 +126,8 @@ export default () => {
                   <p><strong>Contatti</strong></p>
                   <p>Tel: 349 0887444</p>
                   <p>Email: <a href='mailto:nicola@ceronimancini.it'>nicola@ceronimancini.it </a></p>
-                  <p>Linkedin: <a href='https://www.linkedin.com/in/avvocatonicolamancini/' target='_blank'>Nicola Mancini</a></p>
+                  <p>Linkedin: <a href='https://www.linkedin.com/in/avvocatonicolamancini/' target='_blank' rel='noreferrer'>Nicola Mancini</a></p>
                 </div>
-             
                 <div
                   className='img-container' id='img-container-2'
                 >

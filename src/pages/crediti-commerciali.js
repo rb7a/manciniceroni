@@ -1,7 +1,6 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Newsletter from '../components/newsletter'
 import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
 import icon1 from '../images/crediti-bancari-icon.png'

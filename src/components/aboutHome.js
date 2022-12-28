@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const myDivider = {
@@ -32,11 +32,11 @@ export default () => {
           <h2>Chi Siamo</h2>
           <div style={myDivider} />
           <p> La nostra boutique legale nasce dagli avvocati Elisabetta Ceroni e Nicola Mancini, professionisti con un solido background legale, specifico nel recupero crediti, costruito nei più importanti team legali nazionali.</p>
-          <p>L’esperienza acquisita negli anni ci ha permesso di entrare in contatto con aziende strutturalmente diversificate ma simili nell’obiettivo di ottenere una gestione ed un recupero profittevole delle partite creditorie. Ogni caso è seguito in modo specifico, su misura e flessibile, applicando quelli che definiamo “servizi di artigianato legale innovativo”. 
-</p>
-<p>La conoscenza degli scenari legali, delle esigenze aziendali e dell’approccio da attuare a seconda degli ambiti, ci ha permesso di ottenere la fiducia dei nostri clienti.</p>
-<p>La nostra rete di collaboratori esterni unitamente agli innovativi mezzi di comunicazione telematica che utilizziamo ci permettono di essere sempre al fianco di chi ci sceglie, seguendo ogni fase da vicino.
-</p>
+          <p>L’esperienza acquisita negli anni ci ha permesso di entrare in contatto con aziende strutturalmente diversificate ma simili nell’obiettivo di ottenere una gestione ed un recupero profittevole delle partite creditorie. Ogni caso è seguito in modo specifico, su misura e flessibile, applicando quelli che definiamo “servizi di artigianato legale innovativo”.
+          </p>
+          <p>La conoscenza degli scenari legali, delle esigenze aziendali e dell’approccio da attuare a seconda degli ambiti, ci ha permesso di ottenere la fiducia dei nostri clienti.</p>
+          <p>La nostra rete di collaboratori esterni unitamente agli innovativi mezzi di comunicazione telematica che utilizziamo ci permettono di essere sempre al fianco di chi ci sceglie, seguendo ogni fase da vicino.
+          </p>
 
         </div>
       </div>

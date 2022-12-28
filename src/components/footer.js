@@ -1,13 +1,13 @@
 import React from 'react'
-import Subfooter from '../components/subfooter'
-import whiteLogo from '../images/logo-bianco.png'
+// import Subfooter from '../components/subfooter'
+// import whiteLogo from '../images/logo-bianco.png'
 import { Link } from 'gatsby'
 import Newsletter from './newsletter'
 
 const Footer = () => {
   return (
     <div className='footer'>
-    <Newsletter/>
+      <Newsletter />
       {/* <img src={whiteLogo} id='logo-footer' /> */}
       <div className='footer-info-main-container'>
         <div className='footer-info-container'>

@@ -1,11 +1,10 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import ContactCta from '../components/contactCta'
 import Img from 'gatsby-image'
 import icon1 from '../images/crediti-bancari-icon.png'
 import icon2 from '../images/crediti-commerciali-icon .png'
-import Newsletter from '../components/newsletter'
 
 const myDivider = {
   width: '80px',
@@ -90,7 +89,7 @@ export default () => {
               marginBottom: '40px'
             }}
             >Affianchiamo inoltre i nostri clienti nell’attività di <em>Due Diligence,</em> valutazione/analisi dei portafogli, <em>Data Remediation e Business Plan,</em> garantendo qualità e rispetto delle tempistiche richieste dal progetto.
-            
+
             </p>
           </div>
         </div>

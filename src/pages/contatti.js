@@ -1,9 +1,7 @@
 import React from 'react'
-import Header from '../components/header'
 import Img from 'gatsby-image'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Subfooter from '../components/subfooter'
 import Layout from '../components/layout'
 
 const myDivider = {
