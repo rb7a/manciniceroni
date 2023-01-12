@@ -8,6 +8,7 @@
     "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-analytics": "^5.3.0",
+    "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^5.3.1",
     "gatsby-plugin-offline": "^6.3.1",
@@ -17,12 +18,14 @@
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-source-wordpress": "^7.3.2",
     "gatsby-transformer-sharp": "^5.3.1",
+    "libvips": "^0.0.2",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "sharp": "^0.31.3",
     "typeface-poppins": "^1.1.13"
   },
   "devDependencies": {
@@ -31,6 +34,9 @@
   "keywords": [
     "gatsby"
   ],
+  "engines": {
+    "node": "^18.4.0"
+  },
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
