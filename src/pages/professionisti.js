@@ -71,6 +71,8 @@ export default () => {
                     </li>
                     <li>Scuola di specializzazione in diritto civile presso l’Università di Camerino.
                     </li>
+                    <li>Dottoranda di ricerca in Legal and Social Sciences presso l’Università di Camerino.
+                    </li>
                   </ul>
                   <p><strong>Esperienze:</strong>
                   </p>

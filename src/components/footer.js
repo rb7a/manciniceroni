@@ -33,8 +33,8 @@ const Footer = () => {
       </div>
       <div className='contact'>
         <p><strong>ManciniCeroni Studio Legale</strong></p>
-        <p style={{ color: '#999' }}>Avv. Nicola Mancini - P.IVA 02563520416</p>
         <p style={{ color: '#999', position: 'relative', bottom: '10px' }}>Avv. Elisabetta Ceroni - P.IVA 02225960448</p>
+        <p style={{ color: '#999' }}>Avv. Nicola Mancini - P.IVA 02563520416</p>
       </div>
       <style jsx='true'>{`
          .footer {
