@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from './button'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import {useStaticQuery, graphql } from 'gatsby'
 import Divider from '../components/divider'
 import Img from 'gatsby-image'
 
@@ -77,13 +76,34 @@ export default () => {
           }
         }
       }
+      image11: file(relativePath: { eq: "11.png" }) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      image12: file(relativePath: { eq: "12.png" }) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      image13: file(relativePath: { eq: "13.png" }) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
   return (
     <section>
       <div className='collaborazioni'>
-        <h2>Abbiamo Collaborato Con</h2>
+        <h2>HANNO SCELTO IL NOSTRO LAVORO</h2>
         <Divider />
         <p>La soddisfazione del Cliente è la gratificazione della nostra passione.</p>
       </div>
@@ -117,6 +137,15 @@ export default () => {
         </div>
         <div className='logo'>
           <Img fixed={data.image10.childImageSharp.fixed} />
+        </div>
+        <div className='logo'>
+          <Img fixed={data.image11.childImageSharp.fixed} />
+        </div>
+        <div className='logo'>
+          <Img fixed={data.image12.childImageSharp.fixed} />
+        </div>
+        <div className='logo'>
+          <Img fixed={data.image13.childImageSharp.fixed} />
         </div>
       </div>
 

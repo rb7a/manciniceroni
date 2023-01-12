@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
         expires={150}
       >
-      Questo sito utilizza i cookie per migliorare l'esperienza dell'utente.  {' '}
+        Questo sito utilizza i cookie per migliorare l'esperienza dell'utente.  {' '}
         <Link className='policy-link' to='/policy'><span style={{ color: '#222', fontSize: '15px' }}>Policy</span>Policy</Link>
       </CookieConsent>
       <style jsx='true'>{`
