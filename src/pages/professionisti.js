@@ -77,21 +77,21 @@ export default () => {
                   <p><strong>Esperienze:</strong>
                   </p>
                   <p>Ho collaborato con primari Studi Legali e intermediari finanziari, prestando assistenza per la gestione ed il recupero di crediti di derivazione commerciale ed utilities. </p>
-                  <p>Ho fornito consulenza in qualità di legale esterno in favore di:  </p>
+                  <p>Ho fornito consulenza in qualità di legale esterno in favore di: </p>
                   <ul>
-                    <li>Europa Factor S.p.A.;
+                    <li>Crediciò S.r.l.
                     </li>
-                    <li>Euro Service S.p.A.;
+                    <li>Zolva S.p.A.
                     </li>
-                    <li>Studio legale Natali Mei; </li>
-                    <li>Bacciardi and Partners studio legale internazionale ;
+                    <li>Europa Factor S.p.A.</li>
+                    <li>Euro Service S.p.A.
                     </li>
-                    <li>Studio legale Emiliani & Associati.
+                    <li>Studio legale Natali Mei;
                     </li>
+                    <li>Bacciardi and Partners studio legale internazionale</li>
+                    <li>Studio legale Emiliani & Associati</li>
                   </ul>
                   <p>Professionista Delegata alle vendite nelle procedure esecutive immobiliari presso il Tribunale di Fermo.</p>
-                  <p>Docente di Diritto ed Economia presso le Scuole secondarie di secondo grado.
-                  </p>
                   <p><strong>Contatti</strong></p>
                   <p>Tel: 334 6775287</p>
                   <p>Email: <a href='mailto: elisabetta@ceronimancini.it'> elisabetta@ceronimancini.it</a></p>

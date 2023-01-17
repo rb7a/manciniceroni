@@ -111,18 +111,18 @@ export default () => {
         <div className='logo logo-1'>
           <Img fixed={data.image.childImageSharp.fixed} />
         </div>
-        <div className='logo'>
+        {/* <div className='logo'>
           <Img fixed={data.image2.childImageSharp.fixed} />
-        </div>
+        </div> */}
         <div className='logo'>
           <Img fixed={data.image3.childImageSharp.fixed} />
         </div>
         <div className='logo'>
           <Img fixed={data.image4.childImageSharp.fixed} />
         </div>
-        <div className='logo logo-5'>
+        {/* <div className='logo logo-5'>
           <Img fixed={data.image5.childImageSharp.fixed} />
-        </div>
+        </div> */}
         <div className='logo'>
           <Img fixed={data.image6.childImageSharp.fixed} />
         </div>
