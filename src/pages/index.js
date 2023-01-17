@@ -27,7 +27,7 @@ const IndexPage = () => {
     <Layout>
 
       <Helmet>
-        <title>MANCINICERIONI | Gestione E Recupero Crediti</title>
+        <title>CERONI & MANCINI | Gestione e Recupero Crediti</title>
       </Helmet>
 
       <div className='img-container'>
@@ -38,7 +38,7 @@ const IndexPage = () => {
       </div> */}
       <AboutHome />
       <div className='services'>
-        <h2>Aree Di Attività</h2>
+        <h2>Aree di Attività</h2>
         <Divider />
         <p className='subtitle'>Lavoriamo su due principali aree di assistenza al cliente:
         </p>
@@ -118,7 +118,7 @@ const IndexPage = () => {
           top: 40px
         }
         .services {
-          margin-top: 140px
+          margin-top: 100px
         }
         .subtitle{
           max-width: 60%;

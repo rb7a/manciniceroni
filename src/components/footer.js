@@ -19,9 +19,9 @@ const Footer = () => {
         </div>
         <div className='footer-info-container'>
           <h4>Sedi</h4>
-          <p>Ancona</p>
           <p>Fermo</p>
           <p>Forlì-Cesena</p>
+          <p>Ancona</p>
         </div>
         <div className='footer-info-container'>
           <h4>Risorse Utili</h4>
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='contact'>
-        <p><strong>ManciniCeroni Studio Legale</strong></p>
+        <p><strong>Ceroni & Mancini Avvocati</strong></p>
         <p style={{ color: '#999', position: 'relative', bottom: '10px' }}>Avv. Elisabetta Ceroni - P.IVA 02225960448</p>
         <p style={{ color: '#999' }}>Avv. Nicola Mancini - P.IVA 02563520416</p>
       </div>

@@ -37,7 +37,7 @@ const policy = ({ pageContext: { locale }, data }) => {
         <strong>Titolare del Trattamento dei Dati</strong>
         <p>Telefono di riferimento: +39 349 0887444 - 334 6775287<br />
 
-          Indirizzo email di riferimento: info@manciniceronistudiolegale.it
+          Indirizzo email di riferimento:  info@ceronimancini.it
         </p>
       </section>
     </Layout>
