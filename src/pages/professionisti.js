@@ -79,7 +79,7 @@ export default () => {
                   <p>Ho collaborato con primari Studi Legali e intermediari finanziari, prestando assistenza per la gestione ed il recupero di crediti di derivazione commerciale ed utilities. </p>
                   <p>Ho fornito consulenza in qualità di legale esterno in favore di: </p>
                   <ul>
-                    <li>Crediciò S.r.l.
+                    <li>Crediciò S.r.l.
                     </li>
                     <li>Zolva S.p.A.
                     </li>
