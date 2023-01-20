@@ -99,9 +99,9 @@ export default () => {
                 </div>
               </div>
               <div
-                className='professionista'
+                className='professionista mobile-profession'
               >
-                <div>
+                <div className='nicolaContent'>
                   <h3>Avv. Nicola Mancini</h3>
                   <p><strong>Formazione:</strong></p>
                   <ul>
@@ -131,7 +131,7 @@ export default () => {
                   <p>Linkedin: <a href='https://www.linkedin.com/in/avvocatonicolamancini/' target='_blank' rel='noreferrer'>Nicola Mancini</a></p>
                 </div>
                 <div
-                  className='img-container' id='img-container-2'
+                  className='img-container nicolaImage' id='img-container-2'
                 >
                   <Img fluid={data.image.childImageSharp.fluid} />
                 </div>
@@ -163,6 +163,16 @@ export default () => {
           #img-container-1 {
             margin-top: 40px;
           }
+          @media(max-width:767px){
+            .mobile-profession
+            {
+              display: flex;
+              flex-direction: column;
+              margin-top: 20%;
+            }
+            .mobile-profession .nicolaImage {order:1!important;}
+            .mobile-profession .nicolaContent {order:2!important;}
+            }
           @media(min-width:968px){
             .lo-studio{
               width: 100%;
