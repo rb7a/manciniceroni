@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import aboutImage from '../images/CERONI_MANCINI_-23_new.jpg'
 
 const myDivider = {
   width: '80px',
@@ -12,7 +13,7 @@ const myDivider = {
 export default () => {
   const data = useStaticQuery(graphql`
   query {
-    image: file(relativePath: { eq: "mancini-ceroni-lo-studio.jpg" }) {
+    image: file(relativePath: { eq: "CERONI_MANCINI_-23_w.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
@@ -25,7 +26,7 @@ export default () => {
   return (
     <section id='about-section'>
       <div className='half-section section-left'>
-        <Img fluid={data.image.childImageSharp.fluid} />
+        <img src={aboutImage} className="aboutPageImage" />
       </div>
       <div className='half-section section-right'>
         <div id='about-right-container'>
@@ -72,6 +73,17 @@ export default () => {
           position: relative;
           bottom: 40px
         }
+        .aboutPageImage
+        {
+          width:100%;
+          height:500px;
+        }
+        @media (max-width: 767px) {
+          .aboutPageImage
+          {
+            height:auto;
+          }
+          }
       @media (min-width: 1200px) {
         #about-section {
           display: flex;
