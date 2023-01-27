@@ -6,7 +6,7 @@ import logoDesktop from '../images/02_LOGO-CERONI&MANCINI.png'
 export default () => {
   const data = useStaticQuery(graphql`
   query {
-    logoMobile: file(relativePath: { eq: "logo-sinistra.png" }) {
+    logoMobile: file(relativePath: { eq: "02_LOGO-CERONI&MANCINI.png" }) {
       childImageSharp {
         fixed(width: 220) {
           ...GatsbyImageSharpFixed
