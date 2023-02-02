@@ -50,7 +50,7 @@ const IndexPage = () => {
             <p style={{
               marginTop: '40px'
             }}
-            ><Link to='/aree-di-attivita/#crediti-bancari'>{'> Scopri di più'}</Link>
+            ><Link to='/aree-di-attivita/#crediti-commerciali'>{'> Scopri di più'}</Link>
             </p>
           </div>
           <div className='single-service'>
@@ -60,7 +60,7 @@ const IndexPage = () => {
             <p style={{
               marginTop: '40px'
             }}
-            ><Link to='/aree-di-attivita/#crediti-commerciali'>{'> Scopri di più'}</Link>
+            ><Link to='/aree-di-attivita/#crediti-bancari'>{'> Scopri di più'}</Link>
             </p>
           </div>
         </div>
