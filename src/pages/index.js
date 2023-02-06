@@ -47,7 +47,11 @@ const IndexPage = () => {
             <img src={icon1} style={{ display: 'block', margin: '0 auto' }} />
             <p><strong>GESTIONE E RECUPERO CREDITI COMMERCIALI</strong></p>
             <p>Forniamo assistenza alle piccole e medie imprese, artigiani e professionisti, per la gestione e il recupero di crediti commerciali.</p>
-            <p style={{
+            <p 
+            onClick={() => {
+              localStorage.setItem("fromLink" ,1)
+            }}
+             style={{
               marginTop: '40px'
             }}
             ><Link to='/aree-di-attivita/#crediti-commerciali'>{'> Scopri di più'}</Link>
@@ -57,7 +61,11 @@ const IndexPage = () => {
             <img src={icon2} style={{ display: 'block', margin: '0 auto' }} />
             <p><strong>GESTIONE E RECUPERO CREDITI BANCARI</strong></p>
             <p>Forniamo assistenza alle banche e agli intermediari finanziari per la gestione e il recupero di crediti bancari deteriorati <em>Non Performing Loans (NPL) ed Unlikely to Pay (UTP)</em></p>
-            <p style={{
+            <p 
+            onClick={() => {
+              localStorage.setItem("fromLink" ,2)
+            }}
+            style={{
               marginTop: '40px'
             }}
             ><Link to='/aree-di-attivita/#crediti-bancari'>{'> Scopri di più'}</Link>
